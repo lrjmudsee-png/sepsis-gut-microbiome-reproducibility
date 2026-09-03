@@ -1,0 +1,12 @@
+﻿Package,Version,Role
+R,4.4.0,core verified environment
+readxl,1.5.0,script14 only / optional upstream
+vegan,2.7-3,script16
+metafor,5.0-1,script17
+nlme,3.1-164,script20
+openxlsx,4.2.8.1,script21
+dada2,1.34.0,raw preprocessing / taxonomy method
+digest,0.6.39,DADA2 fingerprint validation
+ShortRead,1.64.0,FASTQ utilities / preprocessing
+ggplot2,4.0.3,submission figure redraw
+dplyr,1.2.1,submission figure redraw

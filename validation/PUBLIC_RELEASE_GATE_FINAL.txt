@@ -1,0 +1,30 @@
+Sepsis V1 cleaned public package release gate
+Generated: 2026-09-03
+
+Scientific core scripts preserved byte-for-byte: PASS
+Core files checked: 9
+
+Verified scientific-layer status file:
+  layers = 10
+  all PASS = TRUE
+
+Latest bundled public Figure-source audit:
+  checks = 24
+  PASS = 24
+  FAIL = 0
+
+Active R-script author-specific absolute-path dependencies:
+  FAIL files = 0
+
+Internal/obsolete Figure-development files removed from public Figure directory: YES
+Portable public Figure scripts installed: YES
+Cross-platform ZIP path separators: POSIX '/'
+
+Packaging gate: PASS
+
+Important:
+This packaging gate does not substitute for rerunning R on a fresh machine.
+For repository deposition, the recommended final runtime check remains:
+  1. Rscript reproduce_manuscript_results.R
+  2. Rscript figure_audit_20260902/09_audit_main_figure_sources_PUBLIC.R .
+  3. Rscript figure_audit_20260902/08_make_main_figures_PUBLIC.R .

@@ -1,0 +1,11 @@
+﻿Layer,Verified_Result,Status
+Final ASV checkpoint gate,7/7 projects verified,PASS
+Cleaned genus reconstruction,7/7 projects exact,PASS
+Analysis-ready inputs,7/7 projects exact,PASS
+Analysis sets,12/12 analysis sets exact,PASS
+Discovery statistics,4/4 frozen core outputs exact; scientific gate closed,PASS
+Harmonized meta-analysis,5/5 frozen core outputs exact; gate closed,PASS
+SDI + locked external validation,9/9 frozen outputs scientifically exact; gate closed,PASS
+SDI failure diagnosis,5/5 frozen outputs exact; gate closed,PASS
+Longitudinal/supportive analyses,10/10 frozen outputs exact; gate closed,PASS
+Final results freeze,36/36 frozen inputs and 23/23 derived scientific CSVs reproduced; gate closed,PASS

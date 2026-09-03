@@ -1,0 +1,3 @@
+"Meta_Family","Analysis_Sets","Primary_Common_Genera","Strict_Common_Genera","Meta_Genera_K2","Direction_Consistent_Genera","Strict_Stable_Genera","Tier1_or_Healthy_Robust","Final_Status","Fail_Reasons","Review_Reasons","Reviewer","Review_Date","Final_Decision","Decision_Notes"
+"ICU_control","A01_PRJEB33360_Sepsis_vs_NonSepsisICU | A02_PRJNA691455_Sepsis_vs_NonSepsisICU",120,135,120,70,65,2,"REVIEW","","Some genera have I2>75%","","","",""
+"Healthy_control","A03_PRJNA691455_Sepsis_vs_Healthy | A06_PRJNA978257_Sepsis_vs_Healthy",137,103,137,94,70,24,"REVIEW","","Some genera have I2>75% | A06 is a small 6-vs-7 cohort; leave-one-out leaves only A03 and is not a formal meta-analysis","","","",""

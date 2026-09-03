@@ -1,0 +1,8 @@
+"Check_Name","Status","Details"
+"Day10_locked_files_unchanged","PASS","Candidate, formula, and model lock files were read-only and remained unchanged."
+"Locked_model_refitted","PASS","No locked logistic coefficient was refitted."
+"Locked_threshold_retuned","PASS","No locked threshold was retuned."
+"Locked_candidate_direction_changed","PASS","No locked genus direction was changed."
+"External_labels_used_for_diagnosis","PASS","External labels were used only to diagnose failure mechanisms."
+"Posthoc_variants_labeled_exploratory","PASS","All alternative score variants are labeled POSTHOC_EXPLORATORY_NOT_VALIDATION."
+"Day10_validation_status_preserved","PASS","The prespecified Day10 external validation remains FAILED."

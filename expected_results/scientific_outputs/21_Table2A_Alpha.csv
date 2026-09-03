@@ -1,0 +1,13 @@
+"Analysis_Set","Project_ID","Meta_Family","Metric","Group_A","Group_B","Median_Group_A","Median_Group_B"
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","ICU_control","Observed_Genus_Richness","Sepsis","Non-sepsis ICU",58,50
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","ICU_control","Shannon","Sepsis","Non-sepsis ICU",2.64399087224118,2.45488593035464
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","ICU_control","Inverse_Simpson","Sepsis","Non-sepsis ICU",7.08114131980299,6.23825608778372
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","ICU_control","Observed_Genus_Richness","Sepsis","Non-sepsis ICU",68.5,82
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","ICU_control","Shannon","Sepsis","Non-sepsis ICU",2.23431786981453,2.5178305207477
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","ICU_control","Inverse_Simpson","Sepsis","Non-sepsis ICU",5.53526199046596,6.73474166529891
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Healthy_control","Observed_Genus_Richness","Sepsis","Healthy",68.5,82.5
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Healthy_control","Shannon","Sepsis","Healthy",2.23431786981453,2.68801658598352
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Healthy_control","Inverse_Simpson","Sepsis","Healthy",5.53526199046596,8.07945922842827
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Healthy_control","Observed_Genus_Richness","Sepsis","Healthy",55,55
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Healthy_control","Shannon","Sepsis","Healthy",2.27852947568269,2.25602028191328
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Healthy_control","Inverse_Simpson","Sepsis","Healthy",5.47648446731166,4.48111700120674

@@ -1,0 +1,5 @@
+"Analysis_Set","Project_ID","Input_QC","Filter_QC","PERMANOVA_Estimable","Dispersion_P","Minimum_Group_N","Final_Status","Fail_Reasons","Review_Reasons","Reviewer","Review_Date","Final_Decision","Decision_Notes"
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","PASS","PASS",TRUE,0.8692,67,"PASS","","","","","",""
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","PASS","PASS",TRUE,0.5725,10,"PASS","","","","","",""
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","PASS","PASS",TRUE,0.1149,10,"PASS","","","","","",""
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","PASS","PASS",TRUE,0.4143,6,"REVIEW","","At least one group has fewer than 10 samples","","","",""

@@ -1,0 +1,39 @@
+﻿Column,Description
+Source_Row,Curated metadata field used by the V1 analysis workflow.
+Record_Key,Curated metadata field used by the V1 analysis workflow.
+Project_ID,Public BioProject accession.
+Run_ID,Public sequencing run accession.
+BioSample_ID,Public BioSample identifier when available.
+Patient_ID,Study-level pseudonymous longitudinal/grouping identifier.
+Specimen_ID,Study-level specimen identifier.
+Sample_Alias,Public-study sample alias.
+Sample_Type,Curated metadata field used by the V1 analysis workflow.
+Phenotype,Harmonized clinical phenotype.
+Control_Type,Harmonized comparator category.
+Primary_Sample_Flag,Flag identifying the primary cross-sectional sample.
+Timepoint_Raw,Original or harmonized timepoint label.
+Timepoint_Day,Numeric day representation when available.
+Timepoint_Order,Prespecified ordering used in longitudinal analyses.
+Time_Anchor,Curated metadata field used by the V1 analysis workflow.
+Intervention,Curated metadata field used by the V1 analysis workflow.
+Intervention_Arm,Intervention grouping when applicable.
+Organ_Dysfunction_Type,Curated metadata field used by the V1 analysis workflow.
+Organ_Dysfunction_Status,Organ-dysfunction grouping when applicable.
+Analysis_Role,"Development, locked external, or supportive analysis role."
+Dataset_Split,Analysis split designation.
+Include_Flag,Inclusion flag from curated public-study metadata.
+Review_Status,Metadata curation confirmation status.
+Label_Source,Curated metadata field used by the V1 analysis workflow.
+Label_Confidence,Curated metadata field used by the V1 analysis workflow.
+Exclusion_Reason,Curated metadata field used by the V1 analysis workflow.
+QC_Status,Sample-level QC status.
+Notes,Curated metadata field used by the V1 analysis workflow.
+Source_Sheet,Curated metadata field used by the V1 analysis workflow.
+Raw_Final_Depth,Curated metadata field used by the V1 analysis workflow.
+Cleaned_Target_Depth,Curated metadata field used by the V1 analysis workflow.
+Removed_Reads,Curated metadata field used by the V1 analysis workflow.
+Removed_Read_Proportion,Curated metadata field used by the V1 analysis workflow.
+Taxonomy_Cleaning_Version,Curated metadata field used by the V1 analysis workflow.
+Genus_Data_Version,Curated metadata field used by the V1 analysis workflow.
+Freeze_Set,Curated metadata field used by the V1 analysis workflow.
+Genus__<Genus>|Family__<Family>,Genus-level relative abundance columns in analysis-ready tables.

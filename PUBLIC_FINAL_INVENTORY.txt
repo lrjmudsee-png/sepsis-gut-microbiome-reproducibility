@@ -1,0 +1,24 @@
+Sepsis V1 PUBLIC FINAL inventory
+
+.gitignore: 1 files
+CHANGELOG.md: 1 files
+CITATION.md: 1 files
+LICENSE: 1 files
+PACKAGE_MANIFEST_SHA256.csv: 1 files
+README.md: 1 files
+VERSION: 1 files
+analysis: 7 files
+data: 17 files
+docs: 6 files
+environment: 3 files
+expected_results: 59 files
+figure_audit_20260902: 5 files
+figure_source_audit_public: 2 files
+figures_reproduced_public: 10 files
+preprocessing: 4 files
+publication_ready_tables: 3 files
+reproduce_manuscript_results.R: 1 files
+run_raw_preprocessing.R: 1 files
+validation: 5 files
+
+Total files (including manifest/inventory): 130
