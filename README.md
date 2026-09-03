@@ -1,38 +1,128 @@
 # Reproducible multicohort analysis of the gut microbiome in sepsis
 
-This repository contains the code and compact derived inputs required to reproduce the manuscript-level analyses, tables, figure-source data, and final result freeze for a selected multicohort reanalysis of seven public 16S rRNA gene sequencing projects.
+This repository contains the analysis code, compact processed inputs, frozen scientific outputs, validation scripts, and figure-reproduction utilities associated with a multicohort reanalysis of seven public human gut 16S rRNA gene sequencing projects in sepsis.
 
-## Recommended route: reproduce the manuscript results
+The repository is designed around two reproducibility levels:
 
-The manuscript-result route starts from the validated compact processed checkpoint already bundled in this repository. It does **not** require the user to supply an external processed-data path.
+1. **Exact manuscript-result reproduction** from the validated compact processed checkpoint bundled in this repository.
+2. **Optional upstream reconstruction** from public raw sequencing data for method transparency.
 
-### Step 1 — extract the complete repository
+The exact manuscript-result route is the recommended route for readers and reviewers.
 
-The repository can be stored anywhere on your computer. For example:
+---
+
+## 1. Public datasets
+
+The study uses seven publicly available BioProjects:
+
+- PRJEB33360
+- PRJNA691455
+- PRJNA978257
+- PRJNA1010969
+- PRJNA430161
+- PRJNA797231
+- PRJNA912621
+
+Raw FASTQ files are not redistributed in this repository. They remain available from their original public repositories.
+
+See:
+
+```text
+docs/DATA_AVAILABILITY.md
+```
+
+---
+
+## 2. Repository structure
+
+```text
+.
+├── README.md
+├── reproduce_manuscript_results.R
+├── run_raw_preprocessing.R
+│
+├── analysis/
+│   ├── 01_prepare_analysis_sets.R
+│   ├── 02_discovery_statistics.R
+│   ├── 03_harmonized_meta_analysis.R
+│   ├── 04_sdi_external_validation.R
+│   ├── 05_sdi_failure_diagnosis.R
+│   ├── 06_longitudinal_support.R
+│   └── 07_generate_final_outputs.R
+│
+├── preprocessing/
+├── data/
+│   ├── analysis_ready_checkpoint/
+│   └── metadata/
+│
+├── expected_results/
+│   ├── frozen_result_inputs/
+│   └── scientific_outputs/
+│
+├── validation/
+├── environment/
+├── docs/
+│
+├── figure_audit_20260902/
+│   ├── 08_make_main_figures_PUBLIC.R
+│   ├── 09_audit_main_figure_sources_PUBLIC.R
+│   ├── 10_normalize_publication_labels.R
+│   ├── 11_make_supplementary_figures_PUBLIC.R
+│   ├── V1_Figure1_Screening_Flow_FINAL_20260901.csv
+│   ├── README.md
+│   └── README_SUPPLEMENTARY_FIGURES.md
+│
+├── figures_reproduced_public/
+├── figure_source_audit_public/
+├── publication_ready_tables/
+├── PACKAGE_MANIFEST_SHA256.csv
+└── PUBLIC_FINAL_INVENTORY.txt
+```
+
+---
+
+## 3. Recommended route: reproduce the manuscript results
+
+### Step 1 — obtain the complete repository
+
+Clone the repository with Git, or download the repository archive from GitHub.
+
+Store it anywhere on your computer.
+
+Example only:
 
 ```text
 D:/Sepsis_V1_public/
 ```
 
-The path above is only an example. Use your own location.
+### Step 2 — open R or RStudio in the repository root
 
-### Step 2 — set the R working directory to the repository root
-
-In R/RStudio:
+Example:
 
 ```r
-setwd("D:/Sepsis_V1_public")  # EXAMPLE ONLY — change to your own repository path
+setwd("D:/Sepsis_V1_public")
 ```
 
-### Step 3 — install the analysis packages once on a new computer
+Replace the example path with your own repository location.
+
+### Step 3 — install the required R packages
 
 ```r
 source("environment/install_core_packages.R")
 ```
 
-The verified analysis environment used R 4.4.0. See `environment/verified_package_versions.csv` and `environment/verified_sessionInfo.txt`.
+The verified analysis environment used R 4.4.0.
 
-### Step 4 — run the one-command manuscript reproduction
+See:
+
+```text
+environment/verified_package_versions.csv
+environment/verified_sessionInfo.txt
+```
+
+### Step 4 — run the complete manuscript-analysis pipeline
+
+From R:
 
 ```r
 source("reproduce_manuscript_results.R")
@@ -44,7 +134,7 @@ or from a terminal opened in the repository root:
 Rscript reproduce_manuscript_results.R
 ```
 
-The master runner automatically executes:
+The master runner executes:
 
 1. `analysis/01_prepare_analysis_sets.R`
 2. `analysis/02_discovery_statistics.R`
@@ -57,211 +147,78 @@ The master runner automatically executes:
 
 Regenerated outputs are written under:
 
-`work/manuscript_reproduction/`
+```text
+work/manuscript_reproduction/
+```
 
-The final validation summary is:
+The validation summary is written to:
 
-`work/manuscript_reproduction/validation/reproduction_summary.csv`
+```text
+work/manuscript_reproduction/validation/reproduction_summary.csv
+```
 
 A successful run should report:
 
-`All_Scientific_Checks_PASS = TRUE`
+```text
+All_Scientific_Checks_PASS = TRUE
+```
 
-If `work/manuscript_reproduction/` already exists, either delete it before rerunning or set `SEPSIS_V1_OVERWRITE=true` as described in the runner message.
+If `work/manuscript_reproduction/` already exists, delete it before rerunning or follow the overwrite instructions printed by the runner.
 
-## Path rules for public users
+---
 
-### Manuscript-result route
+## 4. Path configuration
 
-The following are **repository-relative paths** and should normally not be edited:
+The manuscript-result route uses repository-relative paths and should not require author-specific absolute paths.
 
-- `data/analysis_ready_checkpoint/`
-- `data/metadata/`
-- `analysis/`
-- `expected_results/`
-- `validation/`
-- `work/manuscript_reproduction/`
-
-The compact processed data required for manuscript reproduction are already included under `data/analysis_ready_checkpoint/`.
-
-Do **not** replace these relative paths with an author's historical local path such as `E:/sepsis_project` or `C:/Users/<name>/...`.
-
-For most users, the only personal path required for manuscript reproduction is the repository location supplied to `setwd(...)`.
-
-See `docs/PATH_CONFIGURATION.md` for a complete path guide.
-
-## Optional upstream route: raw FASTQ to reconstructed ASV
-
-The optional raw DADA2 route requires Bioconductor package `dada2` and CRAN package `digest`. The optional checkpoint-reconstruction route additionally requires `readxl`. These upstream dependencies are separate from the core manuscript-analysis installer.
-
-Raw FASTQ files are not redistributed in this repository. The optional upstream DADA2 route is provided for method transparency and is separate from the recommended exact manuscript-result route.
-
-### What `run_raw_preprocessing.R` does
-
-`run_raw_preprocessing.R` performs the project-specific **raw FASTQ → final reconstructed ASV table** step.
-
-It does **not** automatically perform fresh SILVA taxonomy assignment or rebuild the exact historical analysis-ready checkpoint. Those are separate optional scripts described below.
-
-### Raw FASTQ folder structure
-
-A convenient layout is:
+The following locations should normally not be edited:
 
 ```text
-F:/Sepsis_V1_raw_fastq/
-├─ PRJEB33360/
-├─ PRJNA691455/
-├─ PRJNA978257/
-├─ PRJNA1010969/
-├─ PRJNA430161/
-├─ PRJNA797231/
-└─ PRJNA912621/
+data/analysis_ready_checkpoint/
+data/metadata/
+analysis/
+expected_results/
+validation/
+work/manuscript_reproduction/
 ```
 
-The drive letter and folder name are examples only.
+For most users, the only personal path required is the location of the repository itself.
 
-### Run one BioProject
-
-Windows example:
-
-```bash
-Rscript run_raw_preprocessing.R PRJEB33360 --raw-root="F:/Sepsis_V1_raw_fastq" --output-root="F:/Sepsis_V1_preprocessed"
-```
-
-`--raw-root` is required and must point either to the common parent containing BioProject subfolders or directly to the selected project's FASTQ folder.
-
-`--output-root` is optional. If omitted, outputs are written under `work/raw_preprocessing/` inside the repository.
-
-The project output is written under:
+See:
 
 ```text
-<output-root>/<BioProject>/
+docs/PATH_CONFIGURATION.md
 ```
 
-### Upstream reproducibility boundary
+---
 
-Raw-data preprocessing is provided for method transparency. The historical DADA2 error-learning random state was not retained for every cohort, so fresh raw-data runs cannot be guaranteed to produce byte-identical ASV tables for all seven projects. Exact manuscript reproduction therefore uses the validated downstream checkpoint bundled in this repository.
+## 5. Main Figure reproduction
 
-See `docs/DADA2_REPRODUCIBILITY.md` and `docs/REPRODUCIBILITY_SCOPE.md`.
+Main Figures 1–4 are reproduced from frozen public figure-source files.
 
-## Optional fresh SILVA 138.2 taxonomy reconstruction
-
-`preprocessing/03_assign_silva1382_taxonomy.R` reproduces the stated taxonomy **method** from final ASV tables. Fresh taxonomy output is not a substitute for the historical taxonomy checkpoints used for exact manuscript reproduction.
-
-If the reconstructed ASV tables were written to `F:/Sepsis_V1_preprocessed`, an R example is:
-
-```r
-Sys.setenv(
-  SEPSIS_V1_PROJECT_ROOT = getwd(),
-  SEPSIS_V1_ASV_ROOT = "F:/Sepsis_V1_preprocessed",
-  SEPSIS_V1_SILVA_REF = "F:/references/SILVA_138_2/silva_nr99_v138.2_toGenus_trainset.fa.gz",
-  SEPSIS_V1_TAXONOMY_OUTPUT_ROOT = "F:/Sepsis_V1_fresh_taxonomy"
-)
-source("preprocessing/03_assign_silva1382_taxonomy.R")
-```
-
-All `F:/...` paths above are examples and must be replaced with paths on the user's own computer.
-
-## Optional rebuild from separately deposited historical checkpoints
-
-`preprocessing/04_build_analysis_ready_from_checkpoints.R` rebuilds analysis-ready data from the larger final-ASV RDS and verified historical taxonomy CSV checkpoints. These larger checkpoints are **not bundled in this compact public package**.
-
-If they are deposited separately, use a structure such as:
-
-```text
-F:/Sepsis_V1_checkpoints/
-├─ asv/
-│  ├─ PRJEB33360_seqtab_final.rds
-│  └─ ...
-└─ taxonomy/
-   ├─ PRJEB33360_taxonomy_silva1382.csv
-   └─ ...
-```
-
-Then:
-
-```r
-Sys.setenv(
-  SEPSIS_V1_PROJECT_ROOT = getwd(),
-  SEPSIS_V1_CHECKPOINT_ROOT = "F:/Sepsis_V1_checkpoints",
-  SEPSIS_V1_ANALYSIS_READY_OUTPUT_ROOT = "F:/Sepsis_V1_analysis_ready_rebuilt"
-)
-source("preprocessing/04_build_analysis_ready_from_checkpoints.R")
-```
-
-Again, the paths above are examples only.
-
-## Public datasets
-
-The analysis uses seven public BioProjects:
-
-- PRJEB33360
-- PRJNA691455
-- PRJNA978257
-- PRJNA1010969
-- PRJNA430161
-- PRJNA797231
-- PRJNA912621
-
-Raw FASTQ files are not redistributed. See `docs/DATA_AVAILABILITY.md`.
-
-## External validation
-
-The SDI workflow preserves the original locked-validation sequence. Candidate genera, score definition, model, and threshold are fixed using the development data before A04/A05 are evaluated. The subsequent failure-diagnosis module is explicitly post-hoc and does not replace or relabel the failed locked external validation.
-
-## Expected outputs and validation
-
-The repository includes compact expected scientific outputs in `expected_results/`. The validator compares regenerated frozen inputs and scientific CSV outputs against these references. Run-time timestamps and PDF binary metadata are not used as scientific equality criteria.
-
-## Final figure production and figure audit (v1.0.3)
-
-The `figure_audit_20260902/` folder contains the final figure-production and figure-audit code and documentation for the 2026-09-02 figure corrections: the audited v1.2 redraw base, the v1.4 finalizer (Figure 1 dual-panel screening flow + Figure 4C cholestasis/SIC group-N labels), the figure-source consistency audit, the Figure 1 screening-flow CSV, and the official correction log / master workbook / corrected verification table. The figure-source consistency audit reports 29 PASS / 0 FAIL. See `figure_audit_20260902/README_V1_Figure_Audit_Corrections_20260902.md` for the evidence-adjudication order and run instructions.
-
-## Public-release portability
-
-The active public scripts are designed to avoid dependence on author-specific absolute paths. `validation/PUBLIC_RELEASE_STATIC_SCAN.csv` records the release scan.
-
-Version 1.0.1 changes only public path configuration, documentation, and optional upstream path plumbing; the manuscript-analysis scripts `analysis/01` through `analysis/07` and the expected scientific results are unchanged from v1.0.0.
-
-## License
-
-Code is released under the MIT License. Derived inputs in this repository originate from publicly available sequencing studies and are provided solely to support reproducibility.
-
-## Citation
-
-Please cite the associated manuscript and the archived repository record. See `CITATION.md`.
-
-## Public figure reproduction and publication-facing labels
-
-The recommended manuscript-analysis route remains:
-
-```bash
-Rscript reproduce_manuscript_results.R
-```
-
-After validating the manuscript results, the public Figure layer can be checked and regenerated with:
+First audit the numerical sources:
 
 ```bash
 Rscript figure_audit_20260902/09_audit_main_figure_sources_PUBLIC.R .
+```
+
+Then regenerate the main figures:
+
+```bash
 Rscript figure_audit_20260902/08_make_main_figures_PUBLIC.R .
 ```
 
-Publication-facing table labels can be generated with:
+These scripts do not refit the statistical models used in the manuscript. They reproduce the publication figures from frozen scientific outputs.
 
-```bash
-Rscript figure_audit_20260902/10_normalize_publication_labels.R .
+See:
+
+```text
+figure_audit_20260902/README.md
 ```
 
-The Figure and label-normalization utilities read package-relative public files only; no author-specific working directory is required.
+---
 
-### Important terminology note
-
-The verified analysis chain retains the historical internal machine identifier for the S06/PRJNA912621 analysis. Publication-facing output uses the clinically specific label **cholestasis/SIC**. This display normalization does not alter any numerical result or model.
-
-### Public package scope
-
-Internal manuscript drafts, figure-audit workbooks, correction logs, author-computer redraw scripts, and obsolete Figure/QC script versions are intentionally excluded from this public package.
-
-### Supplementary Figure reproduction
+## 6. Supplementary Figure reproduction
 
 Supplementary Figures S1–S3 are reproduced from frozen public inputs with:
 
@@ -270,3 +227,181 @@ Rscript figure_audit_20260902/11_make_supplementary_figures_PUBLIC.R .
 ```
 
 The script performs strict source checks before completing and does not refit any statistical model.
+
+Default output directory:
+
+```text
+supplementary_figures_reproduced_public/
+```
+
+See:
+
+```text
+figure_audit_20260902/README_SUPPLEMENTARY_FIGURES.md
+```
+
+---
+
+## 7. Publication-facing table labels
+
+The verified analysis chain retains a historical internal machine identifier for the S06/PRJNA912621 analysis.
+
+For publication-facing output, the clinically specific **cholestasis/SIC** terminology is generated with:
+
+```bash
+Rscript figure_audit_20260902/10_normalize_publication_labels.R .
+```
+
+This normalization changes display labels only. It does not alter statistical models, frozen scientific values, or expected results.
+
+---
+
+## 8. External validation and post-hoc failure diagnosis
+
+The SDI workflow preserves the locked-validation sequence used in the manuscript.
+
+Candidate genera, score definition, model, and threshold are fixed using development data before the locked external comparisons are evaluated.
+
+The subsequent failure-diagnosis analyses are explicitly post hoc and do not replace or relabel the failed locked external validation.
+
+---
+
+## 9. Optional upstream route: raw FASTQ preprocessing
+
+The manuscript-result route above is the recommended exact-reproduction route.
+
+For method transparency, the repository also includes optional upstream preprocessing code.
+
+`run_raw_preprocessing.R` performs project-specific:
+
+```text
+raw FASTQ -> reconstructed ASV table
+```
+
+Example:
+
+```bash
+Rscript run_raw_preprocessing.R PRJEB33360 --raw-root="F:/Sepsis_V1_raw_fastq" --output-root="F:/Sepsis_V1_preprocessed"
+```
+
+The paths above are examples only.
+
+Important reproducibility boundary:
+
+- Raw FASTQ files are not redistributed.
+- Historical DADA2 error-learning random states were not retained for every cohort.
+- Therefore, fresh raw-data runs cannot be guaranteed to produce byte-identical ASV tables for all seven projects.
+- Exact manuscript-result reproduction uses the validated downstream checkpoint bundled in this repository.
+
+See:
+
+```text
+docs/DADA2_REPRODUCIBILITY.md
+docs/REPRODUCIBILITY_SCOPE.md
+```
+
+---
+
+## 10. Optional taxonomy reconstruction
+
+Fresh SILVA 138.2 taxonomy reconstruction is provided for method transparency:
+
+```text
+preprocessing/03_assign_silva1382_taxonomy.R
+```
+
+Freshly reconstructed taxonomy is not a substitute for the historical taxonomy checkpoints used for exact manuscript-result reproduction.
+
+See the preprocessing documentation for details.
+
+---
+
+## 11. Reproducibility boundary
+
+This repository distinguishes between:
+
+### Exact manuscript-result reproduction
+
+Uses the compact validated checkpoint bundled in the repository and is expected to reproduce the manuscript-level scientific outputs and validation checks.
+
+### Upstream methodological reconstruction
+
+Uses public raw FASTQ files and optional taxonomy reconstruction scripts. This route reproduces the documented processing strategy but is not guaranteed to regenerate every historical intermediate file byte-for-byte.
+
+This distinction is intentional and documented.
+
+---
+
+## 12. Data availability
+
+All sequencing data analyzed in this study were obtained from publicly accessible repositories under the following accession numbers:
+
+```text
+PRJEB33360
+PRJNA691455
+PRJNA978257
+PRJNA1010969
+PRJNA430161
+PRJNA797231
+PRJNA912621
+```
+
+Processed analysis-ready metadata, frozen result inputs, scientific output tables, and figure-source data required for manuscript-result reproduction are included in this repository.
+
+Raw FASTQ files are not redistributed.
+
+---
+
+## 13. Code availability
+
+All analysis, validation, main-figure reproduction, supplementary-figure reproduction, and publication-label normalization code associated with the manuscript is publicly available in this repository.
+
+A version-specific archival DOI will be added after the corresponding GitHub release is deposited in Zenodo.
+
+---
+
+## 14. Integrity and validation files
+
+The repository includes package-level integrity and release-QC materials, including:
+
+```text
+PACKAGE_MANIFEST_SHA256.csv
+PUBLIC_FINAL_INVENTORY.txt
+validation/
+```
+
+These files are intended to make the public release auditable and to distinguish frozen scientific outputs from regenerated working files.
+
+---
+
+## 15. License
+
+Code in this repository is released under the MIT License.
+
+Derived inputs originate from publicly available sequencing studies and are provided solely to support scientific reproducibility.
+
+See:
+
+```text
+LICENSE
+```
+
+---
+
+## 16. Citation
+
+Please cite the associated manuscript when available.
+
+For software/repository citation, use the archived Zenodo record once the version-specific DOI has been created.
+
+See:
+
+```text
+CITATION.md
+```
+
+---
+
+## 17. Contact
+
+Questions regarding the scientific analysis or reproducibility package should be directed to the corresponding author listed in the associated manuscript.
