@@ -1,3 +1,3 @@
 "Score","Model","Intercept","Slope","Locked_Raw_Score_Threshold","Threshold_Method","Development_Sets","External_Refitting","Lock_Timestamp"
-"SDI_Equal_Balance","Univariable logistic regression",-0.160831670231249,0.354818778942057,-1.32849067010774,"Maximum Youden index in pooled A01+A02 development data","A01+A02","Forbidden","2026-07-30 23:51:19"
-"SDI_MetaWeighted_Balance","Univariable logistic regression",0.100865168834766,0.322079864702621,-2.42437843332594,"Maximum Youden index in pooled A01+A02 development data","A01+A02","Forbidden","2026-07-30 23:51:19"
+"SDI_Equal_Balance","Univariable logistic regression",-0.160831670231249,0.354818778942057,-1.32849067010774,"Maximum Youden index in pooled A01+A02 development data","A01+A02","Forbidden","2026-09-05 19:56:46"
+"SDI_MetaWeighted_Balance","Univariable logistic regression",0.100865168834766,0.322079864702621,-2.42437843332594,"Maximum Youden index in pooled A01+A02 development data","A01+A02","Forbidden","2026-09-05 19:56:46"

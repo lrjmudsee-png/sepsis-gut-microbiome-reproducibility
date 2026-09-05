@@ -24,6 +24,18 @@
 
 options(stringsAsFactors = FALSE)
 
+# Some Windows sessions inherit a legacy code page that cannot read the
+# UTF-8 checkpoint labels. Select a UTF-8 character locale before any I/O.
+if (.Platform$OS.type == "windows" && !isTRUE(l10n_info()[["UTF-8"]])) {
+  for (candidate in c(".UTF-8", "English_United States.utf8")) {
+    suppressWarnings(Sys.setlocale("LC_CTYPE", candidate))
+    if (isTRUE(l10n_info()[["UTF-8"]])) break
+  }
+  if (!isTRUE(l10n_info()[["UTF-8"]])) {
+    stop("A UTF-8 character locale is required. See README.md before rerunning.")
+  }
+}
+
 repo_root <- function() {
   args <- commandArgs(trailingOnly = FALSE)
   f <- grep("^--file=", args, value = TRUE)
@@ -126,6 +138,11 @@ capture.output(
   sessionInfo(),
   file = file.path(WORK_ROOT, "validation", "sessionInfo.txt")
 )
+
+if (!isTRUE(summary$All_Scientific_Checks_PASS[1])) {
+  stop("Scientific validation failed. Inspect work/manuscript_reproduction/",
+       "validation/reproduction_checks.csv before using the outputs.")
+}
 
 cat("\n============================================================\n")
 cat("Reproduction finished.\n")

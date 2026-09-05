@@ -2363,7 +2363,7 @@ claim_registry <- data.frame(
     "Secondary discovery",
     "Cross-cohort meta-analysis; k=2 per family",
     "Development only",
-    "Prespecified external validation",
+    "Held-out external evaluation; one BioProject",
     "Post-hoc exploratory diagnosis",
     "Primary longitudinal supportive",
     "Independent small-cohort support",
@@ -2380,7 +2380,7 @@ claim_registry <- data.frame(
     "SUPPORTED",
     "TREND_ONLY",
     "NULL_OR_UNDERPOWERED",
-    "SUPPORTED_WITH_LIMITS"
+    "EXPLORATORY_NOT_FDR_SIGNIFICANT"
   ),
   Permitted_Wording = c(
     paste0(
@@ -2397,17 +2397,17 @@ claim_registry <- data.frame(
       "the two ICU-control cohorts, but inference is limited by only two cohorts."
     ),
     paste0(
-      "The prespecified six-genus SDI achieved moderate discrimination ",
+      "The selected six-genus SDI showed moderate apparent discrimination ",
       "in pooled development data."
     ),
     paste0(
-      "The locked SDI failed external validation and showed direction reversal ",
-      "in both external comparisons."
+      "The fixed SDI failed external validation and showed direction reversal ",
+      "in two overlapping comparisons within one external BioProject."
     ),
     paste0(
-      "Post-hoc diagnostics indicated that external failure was driven mainly ",
-      "by systematic reversal among detectable candidate genera rather than ",
-      "only by absent features."
+      "Post-hoc diagnostics identified direction reversal among detectable ",
+      "candidate genera alongside two project-level absences. These patterns ",
+      "do not establish the cause of external failure."
     ),
     paste0(
       "Within PRJEB33360, genus richness and alpha diversity declined during ",
@@ -2423,8 +2423,8 @@ claim_registry <- data.frame(
       "was detected; these analyses were small and underpowered."
     ),
     paste0(
-      "Cholestasis status was associated with a different Shannon-diversity ",
-      "trajectory over time, driven mainly by divergence by day 7."
+      "The exploratory Shannon time-by-cholestasis interaction did not retain ",
+      "significance after correction across non-intercept omnibus terms."
     )
   ),
   Prohibited_Wording = c(
@@ -3082,7 +3082,7 @@ arrow_line <- function(
 }
 
 title(
-  "Study design and prespecified analysis architecture"
+  "Study design and analysis architecture"
 )
 
 box(
@@ -3167,7 +3167,7 @@ box(
   0.48,
   0.92,
   0.64,
-  "Candidate genera and\nprespecified six-genus SDI",
+  "Candidate genera and\nselected six-genus SDI",
   fill = "#F7F7F7"
 )
 
@@ -3403,7 +3403,7 @@ old_par <- par(
 
 draw_auc_forest(
   auc_source,
-  "A. Prespecified equal-weight SDI"
+  "A. Fixed equal-weight SDI"
 )
 
 diagnosis_plot <- crossset_diagnosis
@@ -3587,7 +3587,7 @@ add_sectioned_sheet(
 add_sectioned_sheet(
   main_workbook,
   "Table3_SDI",
-  "Table 3. Prespecified SDI development and external validation",
+  "Table 3. SDI development and external evaluation",
   list(
     "Discrimination performance" =
       sdi_table,
@@ -3969,7 +3969,7 @@ readme_lines <- c(
   "",
   "Primary interpretation rules:",
   "1. ICU-control and healthy-control meta-analyses remain separate.",
-  "2. Day 10 prespecified SDI external validation remains FAILED.",
+  "2. Day 10 fixed SDI external validation remains FAILED.",
   "3. Day 11 alternative scores remain POST-HOC exploratory diagnostics.",
   "4. Day 12 SDI and candidate-genus trajectories are supportive exploratory results.",
   "5. PRJEB33360 longitudinal alpha-diversity decline is the strongest supportive longitudinal result.",

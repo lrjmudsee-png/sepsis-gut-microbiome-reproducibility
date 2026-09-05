@@ -1,0 +1,7 @@
+"Genus_Feature","Expected_Direction","Selection_Role","Development_Direction_Match_N","Development_Sets_N","External_Direction_Match_N","External_Sets_N","External_Complete_Reversal","Missing_In_External_Project","External_All_Zero","Mean_Development_Expected_Signed_Effect","Mean_External_Expected_Signed_Effect","Mean_External_Equal_Component","Mean_External_MetaWeighted_Component","Diagnostic_Label"
+"Genus__Bilophila|Family__Desulfovibrionaceae","Higher_in_Sepsis","Tier1",2,2,0,2,TRUE,FALSE,FALSE,1.35679868475176,-2.34567108525533,-0.781890361751777,-0.914468731914296,"COMPLETE_EXTERNAL_DIRECTION_REVERSAL"
+"Genus__Butyricimonas|Family__Marinifilaceae","Higher_in_Sepsis","Tier1",2,2,0,2,TRUE,FALSE,FALSE,1.50892850915627,-0.913120219079412,-0.304373406359804,-0.312819906436634,"COMPLETE_EXTERNAL_DIRECTION_REVERSAL"
+"Genus__Parabacteroides|Family__Tannerellaceae","Higher_in_Sepsis","Tier2",2,2,0,2,TRUE,FALSE,FALSE,0.839303284334677,-1.50405017275341,-0.50135005758447,-0.402427783209815,"COMPLETE_EXTERNAL_DIRECTION_REVERSAL"
+"Genus__Hoylesella|Family__Prevotellaceae","Lower_in_Sepsis","Tier2",2,2,0,2,TRUE,FALSE,FALSE,1.35052530512914,-0.183102048111352,-0.0610340160371171,-0.0817292546755548,"COMPLETE_EXTERNAL_DIRECTION_REVERSAL"
+"Genus__Campylobacter|Family__Campylobacteraceae","Lower_in_Sepsis","Tier2",2,2,0,2,TRUE,TRUE,TRUE,0.960072675343205,0,0,0,"PROJECT_LEVEL_FEATURE_ABSENCE"
+"Genus__Atopobium|Family__Atopobiaceae","Lower_in_Sepsis","Tier2",2,2,0,2,TRUE,TRUE,TRUE,0.585884344833364,0,0,0,"PROJECT_LEVEL_FEATURE_ABSENCE"

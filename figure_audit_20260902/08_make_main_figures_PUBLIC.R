@@ -384,7 +384,7 @@ p1a <- ggplot() +
     plot.margin=margin(8,10,8,6)
   )
 
-# ---------- Panel B: prespecified analysis architecture ----------
+# ---------- Panel B: analysis architecture ----------
 # Complete architecture restored from the audited figure.
 nodes2 <- data.frame(
   id=c(
@@ -412,7 +412,7 @@ nodes2 <- data.frame(
     "ICU-control family\nA01 + A02",
     "ICU-control\nmeta-analysis",
     "Candidate genera",
-    "Prespecified\nsix-genus SDI",
+    "Selected\nsix-genus SDI",
     "Locked external validation\nA04: healthy | A05: trauma",
     "FAILED\nExternal transfer",
     "Post-hoc failure diagnosis\nDirection reversal +\nproject-level feature absence",
@@ -508,8 +508,8 @@ p1b <- ggplot() +
   ) +
   coord_cartesian(xlim=c(-.05,8.05), ylim=c(.10,8.55), clip="off") +
   labs(
-    title="B  Prespecified analysis architecture",
-    subtitle="Seven public human cohorts; 12 prespecified analysis sets (A01–A06 and S01–S06)"
+    title="B  Analysis architecture",
+    subtitle="Seven public human cohorts; 12 analysis sets (A01–A06 and S01–S06)"
   ) +
   theme_void(base_family="Arial") +
   theme(
@@ -546,7 +546,7 @@ p2a <- ggplot(f2a, aes(x=100*R2, y=Y, colour=Family)) +
   scale_x_continuous(limits=c(0,max(100*f2a$R2)*1.42), expand=c(0,0)) +
   labs(title="A  Community-level effects", x="PERMANOVA R² (%)", y=NULL) +
   theme_pub() +
-  theme(axis.line.y=element_blank(),axis.ticks.y=element_blank(),
+  theme(axis.text.y=element_text(face="italic"),axis.line.y=element_blank(),axis.ticks.y=element_blank(),
         panel.grid.major.y=element_blank(),
         panel.grid.major.x=element_line(colour=COL$grid,linewidth=.35))
 
@@ -574,13 +574,13 @@ meta_panel <- function(z, title, subtitle, xlab, emphasize=FALSE) {
     scale_size_identity() + scale_alpha_identity() +
     labs(title=title,subtitle=subtitle,x=xlab,y=NULL) +
     theme_pub() +
-    theme(axis.line.y=element_blank(),axis.ticks.y=element_blank(),
+    theme(axis.text.y=element_text(face="italic"),axis.line.y=element_blank(),axis.ticks.y=element_blank(),
           panel.grid.major.y=element_blank(),
           panel.grid.major.x=element_line(colour=COL$grid,linewidth=.35))
 }
 
 p2b <- meta_panel(f2b,"B  ICU-control meta-analysis",
-                  "Six prespecified SDI candidates emphasized",
+                  "Six selected SDI candidates emphasized",
                   "Pooled CLR effect: Sepsis − ICU control",TRUE)
 p2c <- meta_panel(f2c,"C  Healthy-control meta-analysis",NULL,
                   "Pooled CLR effect: Sepsis − healthy",FALSE)
@@ -608,7 +608,7 @@ p3a <- ggplot(f3a,aes(x=AUC,y=Display,colour=Stage)) +
   scale_colour_manual(values=c("Development"=COL$development,
                                "External validation"=COL$external)) +
   scale_x_continuous(limits=c(0,1),breaks=seq(0,1,.2)) +
-  labs(title="A  Prespecified equal-weight SDI",
+  labs(title="A  Fixed equal-weight SDI",
        x="AUC (95% bootstrap CI)",y=NULL,colour=NULL) +
   theme_pub() +
   theme(legend.position="top",axis.line.y=element_blank(),axis.ticks.y=element_blank(),
@@ -713,6 +713,7 @@ p3b <- ggplot(f3b,aes(y=GenusF)) +
   theme_pub() +
   theme(
     legend.position="top",
+    axis.text.y=element_text(face="italic"),
     axis.line.y=element_blank(),
     axis.ticks.y=element_blank(),
     panel.grid.major.y=element_blank(),
@@ -844,7 +845,7 @@ save_pub(fig4, "Figure_4_Longitudinal_and_Supportive_Analyses_PUBLIC", 12, 8.7)
 manifest <- data.frame(
   Figure=c("Figure 1","Figure 2","Figure 3","Figure 4"),
   Source=c(
-    "figure_audit_20260902/V1_Figure1_Screening_Flow_FINAL_20260901.csv + prespecified design",
+    "figure_audit_20260902/V1_Figure1_Screening_Flow_FINAL_20260901.csv + analysis roles",
     "expected_results/scientific_outputs/21_Figure2A/B/C_*",
     "expected_results/scientific_outputs/21_Figure3A/B/C_*",
     "expected_results/scientific_outputs/21_Figure4A/B/C/D_* + 21_Results_Number_Summary.csv"

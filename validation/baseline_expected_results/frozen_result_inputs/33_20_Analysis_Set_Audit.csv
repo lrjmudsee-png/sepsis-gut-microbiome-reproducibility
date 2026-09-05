@@ -1,0 +1,7 @@
+"Analysis_ID","Analysis_Type","Input_Status","Role","Interpretation_Limit","Final_Status"
+"T01_PRJEB33360_Longitudinal_Main","Longitudinal_main","PASS","Main longitudinal supportive analysis","Later ICU/discharge samples; observational trajectory.","PASS_WITH_INTERPRETATION_LIMITS"
+"T02_PRJEB33360_Longitudinal_DepthSensitivity","Longitudinal_depth_sensitivity","PASS","Depth sensitivity only","Not a second independent cohort.","PASS_WITH_INTERPRETATION_LIMITS"
+"T03_PRJNA691455_Sepsis_Longitudinal","Longitudinal_sepsis","PASS","Independent longitudinal supportive analysis","Small n=10; supportive only.","PASS_WITH_INTERPRETATION_LIMITS"
+"T04_PRJNA430161_Intervention","Intervention_longitudinal","PASS_WITH_MISSING_CANDIDATE_REVIEW","Small intervention supportive analysis","Very small n=9; interaction tests are underpowered.","PASS_WITH_INTERPRETATION_LIMITS"
+"T05_PRJNA797231_Myocardial_Dysfunction","Organ_dysfunction_cross_sectional","PASS_WITH_MISSING_CANDIDATE_REVIEW","Cross-sectional organ-dysfunction support","Small n=34 and one sample per patient.","PASS_WITH_INTERPRETATION_LIMITS"
+"T06_PRJNA912621_Cholestasis_Longitudinal","Organ_dysfunction_longitudinal","PASS","Longitudinal organ-dysfunction support","Small n=20; group-by-time interaction is supportive.","PASS_WITH_INTERPRETATION_LIMITS"

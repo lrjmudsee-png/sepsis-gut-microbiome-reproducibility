@@ -1,0 +1,5 @@
+"Analysis_Set","Project_ID","Group_A","Group_B","Permutations","F","P","Interpretation","P_FDR"
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","Sepsis","Non-sepsis ICU",9999,0.0258389410756094,0.8692,"PASS: no evidence of unequal group dispersion.",0.8692
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","Sepsis","Non-sepsis ICU",9999,0.317712064243961,0.5725,"PASS: no evidence of unequal group dispersion.",0.763333333333333
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Sepsis","Healthy",9999,2.83538183750459,0.1149,"PASS: no evidence of unequal group dispersion.",0.4596
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Sepsis","Healthy",9999,0.741393850096493,0.4143,"PASS: no evidence of unequal group dispersion.",0.763333333333333

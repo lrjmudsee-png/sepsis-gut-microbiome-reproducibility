@@ -2669,36 +2669,24 @@ mixed_model_terms <- do.call(
   model_term_rows
 )
 
-mixed_model_coefficients$P_FDR <-
-  ave(
-    mixed_model_coefficients$P,
-    interaction(
-      mixed_model_coefficients$
-        Analysis_ID,
-      mixed_model_coefficients$
-        Model,
-      drop = TRUE
-    ),
-    FUN = function(p) {
-      stats::p.adjust(
-        p,
-        method = "BH"
-      )
-    }
-  )
-
-mixed_model_terms$P_FDR <-
-  ave(
-    mixed_model_terms$P,
-    mixed_model_terms$
-      Analysis_ID,
-    FUN = function(p) {
-      stats::p.adjust(
-        p,
-        method = "BH"
-      )
-    }
-  )
+# Submission revision: exclude intercepts from inferential BH families.
+# Preserve the original grouping across metrics; do not select families by results.
+nonintercept_bh <- function(d, groups) {
+  out <- rep(NA_real_, nrow(d))
+  term <- if ("Model_Term" %in% names(d)) d$Model_Term else d$Term
+  eligible <- term != "(Intercept)" & is.finite(d$P)
+  for (g in unique(groups[eligible])) {
+    i <- which(eligible & groups == g)
+    out[i] <- stats::p.adjust(d$P[i], method = "BH")
+  }
+  out
+}
+mixed_model_coefficients$P_FDR <- nonintercept_bh(
+  mixed_model_coefficients,
+  interaction(mixed_model_coefficients$Analysis_ID,
+              mixed_model_coefficients$Model, drop = TRUE))
+mixed_model_terms$P_FDR <- nonintercept_bh(
+  mixed_model_terms, mixed_model_terms$Analysis_ID)
 
 # ------------------------------------------------------------
 # Paired within-patient changes

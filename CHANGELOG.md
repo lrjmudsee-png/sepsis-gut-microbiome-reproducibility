@@ -1,5 +1,32 @@
 # Changelog
 
+## Submission revision — 2026-09-06
+
+Version: `1.0.0-submission-revision-20260906`. Based on published tag `v1.0.0`
+(commit `c92a4055cd804e8942a07b8cd263f5b32ed6f4b3`); the tag and its DOI
+archive remain unchanged. This is a branch update, not a new archival release.
+
+- Exclude intercepts from longitudinal BH families; retain grouping across all
+  metrics by analysis ID (omnibus) or analysis ID and model (coefficients).
+- Update adjusted P values and affected tables/figures/claim records. T06
+  Shannon time-by-cholestasis q changes from 0.040954 to 0.266299.
+- Preserve all non-FDR frozen scientific fields and original expected results.
+  Regenerated lock timestamps do not establish prospective registration.
+- Describe development performance as apparent, identify the two overlapping
+  external comparisons within one BioProject, and avoid causal interpretations
+  of post-hoc failure diagnostics.
+- Add the public sample-metadata crosswalk, current figure sources, original
+  correction audit and a portable independent Python validator.
+- Add Windows UTF-8 preflight and an error exit when scientific validation fails.
+- Retain baseline packaging audits separately, update reproduction/citation
+  guidance, and standardize text checkout endings to LF for package hashes.
+
+## Baseline preparation history
+
+The entries below describe preparation of the files ultimately published under
+GitHub tag `v1.0.0`. Their internal package labels are historical; they are not
+claims that GitHub releases v1.0.1, v1.0.2 or v1.0.3 were published.
+
 ## Public-final cleanup — 2026-09-03
 
 Packaging/documentation cleanup only; no manuscript-analysis logic or frozen scientific result changed.

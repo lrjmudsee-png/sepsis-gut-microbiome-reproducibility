@@ -494,9 +494,9 @@ p_s1b <- ggplot(
 
 p_s1 <- (p_s1a | p_s1b) +
   plot_annotation(
-    title = "Supplementary Figure S1. Characteristics of the prespecified analysis sets",
+    title = "Supplementary Figure S1. Characteristics of the analysis sets",
     subtitle = paste0(
-      "Sample size and median sequencing depth are shown for the prespecified ",
+      "Sample size and median sequencing depth are shown for the ",
       "development and locked external-validation analysis sets."
     )
   )
@@ -853,7 +853,7 @@ p_s3 <- ggplot(
   ) +
   theme_v1() +
   theme(
-    axis.text.x = element_text(angle = 35, hjust = 1),
+    axis.text.x = element_text(angle = 35, hjust = 1, face = "italic"),
     plot.margin = margin(10, 22, 10, 10)
   )
 

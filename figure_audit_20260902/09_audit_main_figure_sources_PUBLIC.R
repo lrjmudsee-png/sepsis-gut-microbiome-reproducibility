@@ -120,7 +120,7 @@ add("Figure4C Day7 direction",length(med_no)==1 && length(med_yes)==1 && med_no>
 
 sumdf<-rc(file.path(S,"21_Results_Number_Summary.csv"))
 fdr<-sumdf$Value[sumdf$Topic=="T06 Shannon interaction FDR"]
-add("Figure4C interaction FDR",length(fdr)==1 && as.numeric(fdr)==.041,fdr,.041)
+add("Figure4C interaction FDR",length(fdr)==1 && as.numeric(fdr)==.266,fdr,.266)
 
 write.csv(checks,file.path(OUT,"PUBLIC_Figure_Source_Audit.csv"),
           row.names=FALSE,fileEncoding="UTF-8")

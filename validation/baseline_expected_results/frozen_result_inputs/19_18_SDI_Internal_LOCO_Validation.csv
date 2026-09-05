@@ -1,0 +1,5 @@
+"Train_Set","Test_Set","Score","Train_Threshold","Test_AUC","Test_TP","Test_TN","Test_FP","Test_FN","Test_Sensitivity","Test_Specificity","Test_Balanced_Accuracy"
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","A02_PRJNA691455_Sepsis_vs_NonSepsisICU","SDI_Equal_Balance",-1.32849067010774,0.69,10,3,7,0,1,0.3,0.65
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","A02_PRJNA691455_Sepsis_vs_NonSepsisICU","SDI_MetaWeighted_Balance",-2.42437843332594,0.72,10,3,7,0,1,0.3,0.65
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","A01_PRJEB33360_Sepsis_vs_NonSepsisICU","SDI_Equal_Balance",3.87751595234199,0.733232571320612,9,78,1,58,0.134328358208955,0.987341772151899,0.560835065180427
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","A01_PRJEB33360_Sepsis_vs_NonSepsisICU","SDI_MetaWeighted_Balance",0.489028367595395,0.730965426034385,28,68,11,39,0.417910447761194,0.860759493670886,0.63933497071604

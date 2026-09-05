@@ -1,0 +1,12 @@
+Check,Count,Unit,Result
+Complete manuscript reproduction,63,checks,PASS
+Frozen non-FDR scientific fields preserved,36,tables,PASS
+Independent BH calculation,295,eligible rows,PASS
+Multiplicity families preserved,10,families,PASS
+Main figure source audit,24,checks,PASS
+Supplementary figure source audit,17,checks,PASS
+Independent validator regression tests,5,tests,PASS
+Windows UTF-8 preflight,1,C-locale test,PASS
+Scientific validation error gate,2,pass/fail scenarios,PASS
+R syntax scan,19,scripts,PASS
+Rendered figure inspection,7,figures,PASS

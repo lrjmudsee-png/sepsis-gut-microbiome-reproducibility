@@ -1,0 +1,11 @@
+﻿File,Analysis_ID,Model,Tests_N
+28_20_Mixed_Model_Overall_Terms.csv,T01_PRJEB33360_Longitudinal_Main,,11
+28_20_Mixed_Model_Overall_Terms.csv,T02_PRJEB33360_Longitudinal_DepthSensitivity,,11
+28_20_Mixed_Model_Overall_Terms.csv,T03_PRJNA691455_Sepsis_Longitudinal,,11
+28_20_Mixed_Model_Overall_Terms.csv,T04_PRJNA430161_Intervention,,24
+28_20_Mixed_Model_Overall_Terms.csv,T06_PRJNA912621_Cholestasis_Longitudinal,,33
+29_20_Mixed_Model_Coefficients.csv,T01_PRJEB33360_Longitudinal_Main,Value ~ Timepoint_Factor + (1|Patient_ID),44
+29_20_Mixed_Model_Coefficients.csv,T02_PRJEB33360_Longitudinal_DepthSensitivity,Value ~ Timepoint_Factor + (1|Patient_ID),44
+29_20_Mixed_Model_Coefficients.csv,T03_PRJNA691455_Sepsis_Longitudinal,Value ~ Timepoint_Factor + (1|Patient_ID),22
+29_20_Mixed_Model_Coefficients.csv,T04_PRJNA430161_Intervention,Value ~ Timepoint_Factor * Arm_Factor + (1|Patient_ID),40
+29_20_Mixed_Model_Coefficients.csv,T06_PRJNA912621_Cholestasis_Longitudinal,Value ~ Timepoint_Factor * Status_Factor + (1|Patient_ID),55

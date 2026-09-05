@@ -22,4 +22,4 @@
 "Figure4B uses mean source",TRUE,"2.179316 | 1.927279 | 1.615723","finite Mean + SE"
 "Figure4C group N",TRUE,"Day 1|No 10; Day 1|Yes 10; Day 3|No 10; Day 3|Yes 10; Day 7|No 9; Day 7|Yes 9","Day 1|No 10; Day 1|Yes 10; Day 3|No 10; Day 3|Yes 10; Day 7|No 9; Day 7|Yes 9"
 "Figure4C Day7 direction",TRUE,"No=3.002; Yes=1.455","No > Yes"
-"Figure4C interaction FDR",TRUE,"0.041","0.041"
+"Figure4C interaction FDR",TRUE,"0.266","0.266"

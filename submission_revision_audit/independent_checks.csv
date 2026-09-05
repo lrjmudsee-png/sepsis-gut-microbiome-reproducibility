@@ -1,0 +1,39 @@
+﻿File,Check,PASS
+01_15_Analysis_Set_Summary.csv,All non-FDR scientific fields unchanged,True
+02_15_Analysis_Set_QC.csv,All non-FDR scientific fields unchanged,True
+03_15_Group_Descriptive_Statistics.csv,All non-FDR scientific fields unchanged,True
+04_16_Alpha_Diversity_Tests.csv,All non-FDR scientific fields unchanged,True
+05_16_Beta_Diversity_PERMANOVA.csv,All non-FDR scientific fields unchanged,True
+06_16_Beta_Dispersion_Tests.csv,All non-FDR scientific fields unchanged,True
+07_16_Discovery_Analysis_Audit.csv,All non-FDR scientific fields unchanged,True
+08_17_Family_Feature_Harmonization.csv,All non-FDR scientific fields unchanged,True
+09_17_Random_Fixed_Meta_Results.csv,All non-FDR scientific fields unchanged,True
+10_17_Candidate_Genus_Grading.csv,All non-FDR scientific fields unchanged,True
+11_17_Meta_Analysis_Audit.csv,All non-FDR scientific fields unchanged,True
+12_17_Global_Meta_Workflow_Audit.csv,All non-FDR scientific fields unchanged,True
+13_18_SDI_Candidate_Lock.csv,All non-FDR scientific fields unchanged,True
+14_18_SDI_Formula_Lock.csv,All non-FDR scientific fields unchanged,True
+15_18_SDI_Model_and_Threshold_Lock.csv,All non-FDR scientific fields unchanged,True
+16_18_SDI_Performance_Summary.csv,All non-FDR scientific fields unchanged,True
+17_18_SDI_Locked_Threshold_Metrics.csv,All non-FDR scientific fields unchanged,True
+18_18_SDI_Group_Comparison_Tests.csv,All non-FDR scientific fields unchanged,True
+19_18_SDI_Internal_LOCO_Validation.csv,All non-FDR scientific fields unchanged,True
+20_18_SDI_External_Validation_Audit.csv,All non-FDR scientific fields unchanged,True
+21_19_Candidate_CrossSet_Diagnosis.csv,All non-FDR scientific fields unchanged,True
+22_19_Exploratory_Score_Performance.csv,All non-FDR scientific fields unchanged,True
+23_19_Leave_One_Genus_Out_Sensitivity.csv,All non-FDR scientific fields unchanged,True
+24_19_Diagnostic_Conclusion.csv,All non-FDR scientific fields unchanged,True
+25_19_Diagnostic_Workflow_Audit.csv,All non-FDR scientific fields unchanged,True
+26_20_Input_Audit.csv,All non-FDR scientific fields unchanged,True
+27_20_Timepoint_Order_Audit.csv,All non-FDR scientific fields unchanged,True
+28_20_Mixed_Model_Overall_Terms.csv,All non-FDR scientific fields unchanged,True
+29_20_Mixed_Model_Coefficients.csv,All non-FDR scientific fields unchanged,True
+30_20_Paired_Timepoint_Changes.csv,All non-FDR scientific fields unchanged,True
+31_20_Myocardial_Dysfunction_CrossSectional.csv,All non-FDR scientific fields unchanged,True
+32_20_Timepoint_Group_Comparisons.csv,All non-FDR scientific fields unchanged,True
+33_20_Analysis_Set_Audit.csv,All non-FDR scientific fields unchanged,True
+34_20_Workflow_Audit.csv,All non-FDR scientific fields unchanged,True
+35_18_All_SDI_Sample_Scores.csv,All non-FDR scientific fields unchanged,True
+36_20_All_Supportive_Sample_Metrics.csv,All non-FDR scientific fields unchanged,True
+28_20_Mixed_Model_Overall_Terms.csv,Independent Python BH calculation matches every eligible row,True
+29_20_Mixed_Model_Coefficients.csv,Independent Python BH calculation matches every eligible row,True

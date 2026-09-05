@@ -1,0 +1,5 @@
+"Analysis_Set","Project_ID","Meta_Family","Group_A","Group_B","R2","F","P","FDR","Permutations"
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","ICU_control","Sepsis","Non-sepsis ICU",0.0146546866111805,2.1416602315307,0.0245,0.0436,9999
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","ICU_control","Sepsis","Non-sepsis ICU",0.0537088210014124,1.02162928227704,0.4011,0.4011,9999
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Healthy_control","Sepsis","Healthy",0.144852969113854,3.04901186565251,0.0017,0.0068,9999
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Healthy_control","Sepsis","Healthy",0.131132215666042,1.66015405143856,0.0327,0.0436,9999

@@ -1,0 +1,7 @@
+"Check","Passed","Status"
+"Day10 external-validation workflow audit contains no FAIL",TRUE,"PASS"
+"Day11 diagnostic workflow audit contains no FAIL",TRUE,"PASS"
+"Day12 workflow audit contains no FAIL",TRUE,"PASS"
+"Day12 timepoint-order audit all PASS",TRUE,"PASS"
+"Day10 external validation remains failed in diagnostic conclusion",TRUE,"PASS"
+"PERMANOVA adjusted-p-value field resolved for A01/A02/A03/A06",TRUE,"PASS"

@@ -1,0 +1,35 @@
+"Analysis_Set","Project_ID","Analysis_Family","Model_Use","Comparison_Group","Samples_N","Unique_Patients_N","Depth_Min","Depth_P25","Depth_Median","Depth_P75","Depth_Max","Detected_Genera_Median","Detected_Genera_P25","Detected_Genera_P75","Classified_Relative_Sum_Median"
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","Primary ICU case-control","Development","Non-sepsis ICU",79,79,5885,19285.5,23595,28523.5,41460,50,36.5,60.5,0.949370277078085
+"A01_PRJEB33360_Sepsis_vs_NonSepsisICU","PRJEB33360","Primary ICU case-control","Development","Sepsis",67,67,6764,22720.5,26224,32748.5,45432,58,45,66.5,0.949186625847889
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","Primary ICU case-control","Development","Non-sepsis ICU",10,10,27184,38289.5,51329,53621.5,60635,82,72.25,88,0.965629915709558
+"A02_PRJNA691455_Sepsis_vs_NonSepsisICU","PRJNA691455","Primary ICU case-control","Development","Sepsis",10,10,36503,42953.5,49738.5,56969,67568,68.5,48.75,92.75,0.979740578173277
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Secondary healthy-control comparison","Development","Healthy",10,10,43626,55097.25,60187.5,65555.75,80294,82.5,70.75,94.25,0.900245661434124
+"A03_PRJNA691455_Sepsis_vs_Healthy","PRJNA691455","Secondary healthy-control comparison","Development","Sepsis",10,10,36503,42953.5,49738.5,56969,67568,68.5,48.75,92.75,0.979740578173277
+"A04_PRJNA1010969_External_Sepsis_vs_Healthy","PRJNA1010969","Locked external validation","Locked_external_test","Healthy",17,17,16293,28273,38047,44313,76961,90,69,94,0.962489711127661
+"A04_PRJNA1010969_External_Sepsis_vs_Healthy","PRJNA1010969","Locked external validation","Locked_external_test","Sepsis",18,18,19970,24564.75,33577.5,39424,44048,50,35.75,65.5,0.991699153612278
+"A05_PRJNA1010969_External_Sepsis_vs_Trauma","PRJNA1010969","Locked external validation","Locked_external_test","Trauma",18,18,23716,27718.25,35961.5,41076.75,71887,80,64.75,84.75,0.95644572731768
+"A05_PRJNA1010969_External_Sepsis_vs_Trauma","PRJNA1010969","Locked external validation","Locked_external_test","Sepsis",18,18,19970,24564.75,33577.5,39424,44048,50,35.75,65.5,0.991699153612278
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Primary healthy-control comparison","Development","Sepsis",6,6,26222,32133,34532.5,39443,50154,55,40,76,0.972976249310411
+"A06_PRJNA978257_Sepsis_vs_Healthy","PRJNA978257","Primary healthy-control comparison","Development","Healthy",7,7,22691,24213.5,26659,31887.5,38499,55,42.5,71.5,0.987096290183427
+"S01_PRJEB33360_Longitudinal_Main_ge1000","PRJEB33360","Longitudinal support","Not_for_model","M2.5_ICU_day5",34,34,6510,19050.75,25129.5,32978.25,70173,45,35.25,56.75,0.947241227230268
+"S01_PRJEB33360_Longitudinal_Main_ge1000","PRJEB33360","Longitudinal support","Not_for_model","M2.6_ICU_day6",26,26,3309,12947,21074.5,25142,35909,34,29.25,55.75,0.944693288295577
+"S01_PRJEB33360_Longitudinal_Main_ge1000","PRJEB33360","Longitudinal support","Not_for_model","M2.7_ICU_day7",28,28,3857,17116,24961,29732.25,42328,33,19.25,43.25,0.96263597570743
+"S01_PRJEB33360_Longitudinal_Main_ge1000","PRJEB33360","Longitudinal support","Not_for_model","M3_discharge",3,3,19887,20665.5,21444,26338,31232,33,24.5,45.5,0.96115463532923
+"S02_PRJEB33360_Longitudinal_Sensitivity_ge5000","PRJEB33360","Longitudinal sensitivity","Not_for_model","M2.5_ICU_day5",34,34,6510,19050.75,25129.5,32978.25,70173,45,35.25,56.75,0.947241227230268
+"S02_PRJEB33360_Longitudinal_Sensitivity_ge5000","PRJEB33360","Longitudinal sensitivity","Not_for_model","M2.6_ICU_day6",25,25,7242,16148,21918,25469,35909,35,30,57,0.947844765859946
+"S02_PRJEB33360_Longitudinal_Sensitivity_ge5000","PRJEB33360","Longitudinal sensitivity","Not_for_model","M2.7_ICU_day7",26,26,6388,19572,25228.5,29892.75,42328,33,20.75,41.25,0.96263597570743
+"S02_PRJEB33360_Longitudinal_Sensitivity_ge5000","PRJEB33360","Longitudinal sensitivity","Not_for_model","M3_discharge",3,3,19887,20665.5,21444,26338,31232,33,24.5,45.5,0.96115463532923
+"S03_PRJNA691455_Sepsis_Longitudinal","PRJNA691455","Longitudinal support","Not_for_model","Day 1",10,10,36503,42953.5,49738.5,56969,67568,68.5,48.75,92.75,0.979740578173277
+"S03_PRJNA691455_Sepsis_Longitudinal","PRJNA691455","Longitudinal support","Not_for_model","Day 3",9,9,26927,35768,43460,45279,48764,46,35,74,0.948298328143289
+"S03_PRJNA691455_Sepsis_Longitudinal","PRJNA691455","Longitudinal support","Not_for_model","Day 7",10,10,26366,38803.5,49313.5,52116.75,57968,53.5,46.75,65.75,0.992807673162593
+"S04_PRJNA430161_Intervention_Longitudinal","PRJNA430161","Intervention/longitudinal support","Not_for_model","Day 7",9,9,18458,28374,29421,33503,62020,21,14,33,0.971769930217805
+"S04_PRJNA430161_Intervention_Longitudinal","PRJNA430161","Intervention/longitudinal support","Not_for_model","Day 28",8,8,18409,25507.5,29074,34435.5,51396,33,31,34.75,0.990607747265418
+"S04_PRJNA430161_Intervention_Longitudinal","PRJNA430161","Intervention/longitudinal support","Not_for_model","Baseline",9,9,15564,24865,28338,30776,55516,30,24,32,0.982304443997587
+"S05_PRJNA797231_Organ_Dysfunction","PRJNA797231","Organ dysfunction support","Not_for_model","Yes",18,18,8559,19191.5,25168,31202.75,37314,46,37.75,53,0.979319786643141
+"S05_PRJNA797231_Organ_Dysfunction","PRJNA797231","Organ dysfunction support","Not_for_model","No",16,16,9440,17238.5,19509,22613.75,25805,43,31.75,51.5,0.986532885393754
+"S06_PRJNA912621_Organ_Dysfunction_Longitudinal","PRJNA912621","Organ dysfunction longitudinal support","Not_for_model","No | Day 1",10,10,20513,30253.75,35411.5,44333.75,63037,63.5,58.5,69.75,0.982515157189841
+"S06_PRJNA912621_Organ_Dysfunction_Longitudinal","PRJNA912621","Organ dysfunction longitudinal support","Not_for_model","No | Day 7",9,9,23006,26795,30200,31189,68695,76,58,88,0.944668874172186
+"S06_PRJNA912621_Organ_Dysfunction_Longitudinal","PRJNA912621","Organ dysfunction longitudinal support","Not_for_model","No | Day 3",10,10,26195,27668.75,30229.5,41918,51228,57,49,76,0.981962940279337
+"S06_PRJNA912621_Organ_Dysfunction_Longitudinal","PRJNA912621","Organ dysfunction longitudinal support","Not_for_model","Yes | Day 7",9,9,30790,42159,46241,59657,63990,62,47,77,0.989257490038963
+"S06_PRJNA912621_Organ_Dysfunction_Longitudinal","PRJNA912621","Organ dysfunction longitudinal support","Not_for_model","Yes | Day 3",10,10,28918,32671.75,46465.5,58128.5,65085,79.5,38.25,104.25,0.99065096549821
+"S06_PRJNA912621_Organ_Dysfunction_Longitudinal","PRJNA912621","Organ dysfunction longitudinal support","Not_for_model","Yes | Day 1",10,10,28361,30541.5,38145,40053.75,52430,71.5,57,89,0.98419787546953
