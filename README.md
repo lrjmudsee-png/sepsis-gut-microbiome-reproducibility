@@ -2,7 +2,8 @@
 
 Analysis code, compact processed checkpoints, reviewed results, and figure sources for a secondary analysis of seven public human gut 16S rRNA sequencing projects.
 
-**Current release:** `v1.1.0`
+**Current release:** `v1.1.0`  
+**Zenodo archive:** https://doi.org/10.5281/zenodo.22537251
 
 This repository accompanies the manuscript *Context-dependent gut microbiota alterations in sepsis and failure of a locked genus-level dysbiosis index in external validation*.
 
@@ -119,7 +120,7 @@ See [path configuration](docs/PATH_CONFIGURATION.md), [DADA2 reproducibility](do
 
 ## Version history
 
-- `v1.1.0`: corrected publication release corresponding to the current manuscript.
+- `v1.1.0`: corrected publication release, archived at Zenodo DOI [10.5281/zenodo.22537251](https://doi.org/10.5281/zenodo.22537251).
 - `v1.0.0`: historical baseline, archived at Zenodo DOI [10.5281/zenodo.22330040](https://doi.org/10.5281/zenodo.22330040).
 
 The `v1.0.0` archive predates the corrected longitudinal multiple-testing adjustment and should not be used to reproduce the final manuscript results.
