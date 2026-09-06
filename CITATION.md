@@ -6,8 +6,10 @@ Please identify the exact software version used and cite the associated manuscri
 
 - Version: `v1.1.0`
 - Repository: https://github.com/lrjmudsee-png/sepsis-gut-microbiome-reproducibility
+- GitHub release: https://github.com/lrjmudsee-png/sepsis-gut-microbiome-reproducibility/releases/tag/v1.1.0
+- Zenodo DOI: https://doi.org/10.5281/zenodo.22537251
 
-Version `v1.1.0` is the corrected publication release corresponding to the current manuscript. A version-specific Zenodo DOI should be added here after the v1.1.0 archive is deposited.
+Version `v1.1.0` is the corrected publication release corresponding to the current manuscript and is the recommended version for reproduction of the final manuscript results.
 
 ## Historical baseline
 
