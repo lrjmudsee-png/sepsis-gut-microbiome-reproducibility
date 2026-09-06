@@ -1,23 +1,33 @@
-# Public package contents
+# Public release contents
 
-The current submission revision is mapped in the root [README](../README.md).
-See [SUBMISSION_REVISION.md](SUBMISSION_REVISION.md) for scientific changes.
+This document describes the `v1.1.0` publication release. The root [README](../README.md) provides the main entry point, and [correction provenance](SUBMISSION_REVISION.md) documents the statistical correction from the historical v1.0.0 baseline.
 
-`PUBLIC_FINAL_INVENTORY.txt` lists distributed files. `PACKAGE_MANIFEST_SHA256.csv`
-contains their SHA256 hashes, excluding the manifest itself. Text files use LF
-line endings in Git checkouts and archives.
+## Core analysis
 
-`expected_results/` contains current reviewed expectations.
-`validation/baseline_expected_results/` preserves the original expectations.
-`validation/baseline_release_audit/` contains historical packaging checks;
-those checks describe the baseline and do not certify the current revision.
+`analysis/` contains the seven manuscript-analysis modules.
 
-Current numerical reproduction reports are under
-`submission_revision_audit/github_validation_20260906/`. The original
-2026-09-05 independent correction audit is also retained in
-`submission_revision_audit/`. Figure-source audits are stored alongside the
-public figure outputs. Work-directory outputs are not distributed.
+## Processed data
 
-The scientific correction changes longitudinal FDR values. It does not alter
-the checkpoint, raw P values, model estimates, score, threshold or sample sets.
-Claim wording and figure labels were also revised to state the evidence boundary.
+`data/analysis_ready_checkpoint/` contains the compact processed checkpoints used for manuscript-level reproduction.
+
+## Reviewed results
+
+`expected_results/` contains the reviewed v1.1.0 scientific outputs and expected values used by the reproduction workflow.
+
+## Figures and tables
+
+- `figures_reproduced_public/` contains the main figures.
+- `supplementary_figures_reproduced_public/` contains supplementary figures and source audits.
+- `publication_ready_tables/` contains publication-facing tables.
+
+## Validation and provenance
+
+`validation/` contains independent correction validation together with the preserved v1.0.0 expectations used for field-level comparison.
+
+`submission_revision_audit/` retains correction evidence and recorded verification reports. These files are preserved for transparency and provenance; they are not required for ordinary use of the analysis pipeline.
+
+Historical packaging checks are kept separately under `validation/baseline_release_audit/` and describe the v1.0.0 baseline rather than the current release.
+
+## Scope of the correction
+
+The v1.1.0 correction changes longitudinal FDR-adjusted P values and propagates the resulting interpretation to affected tables, figures, and claim records. It does not alter the processed checkpoint, raw P values, model estimates, confidence intervals, sample selection, SDI feature selection, score orientation, threshold, or external-validation AUCs.

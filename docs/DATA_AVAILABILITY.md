@@ -1,12 +1,21 @@
 # Data availability
 
-All source sequencing datasets are publicly available through their BioProject accessions:
+All source sequencing datasets are publicly available through the following BioProject accessions:
 
-PRJEB33360, PRJNA691455, PRJNA978257, PRJNA1010969, PRJNA430161,
-PRJNA797231, and PRJNA912621.
+- PRJEB33360
+- PRJNA691455
+- PRJNA978257
+- PRJNA1010969
+- PRJNA430161
+- PRJNA797231
+- PRJNA912621
 
 Raw FASTQ files are not redistributed in this repository.
 
-The compact `data/analysis_ready_checkpoint/` files are derived from those public datasets
-and are included to make manuscript-level result reproduction practical without requiring
-tens of gigabytes of raw sequencing data.
+Compact processed count and metadata checkpoints derived from these public datasets are provided under `data/analysis_ready_checkpoint/` to support practical reproduction of the manuscript-level analyses without requiring large raw-read downloads.
+
+The current publication code release is `v1.1.0`.
+
+The original `v1.0.0` archive is preserved at Zenodo DOI https://doi.org/10.5281/zenodo.22330040. That record represents the historical baseline and does not contain the corrected longitudinal multiple-testing results included in v1.1.0.
+
+A version-specific archive DOI for v1.1.0 should be added here after deposition.
