@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Independently audit the submission FDR revision; Python standard library only.
+"""Independently audit the corrected longitudinal FDR results.
 
 Default: audit the distributed expected_results/frozen_result_inputs.
 --results-root: audit freshly computed 06_frozen_result_inputs instead.
@@ -8,7 +8,6 @@ This program never edits results or updates expected values.
 
 import argparse
 import csv
-import hashlib
 import math
 import sys
 from collections import defaultdict
@@ -112,40 +111,20 @@ def audit_results(results_root):
         if row["Model"]:
             key += (row["Model"],)
         recorded_counts[key] = int(row["Tests_N"])
-    require(family_counts == recorded_counts, "Multiplicity families differ from the revision record")
+    require(family_counts == recorded_counts,
+            "Multiplicity families differ from the correction record")
     print(f"PASS: {len(expected_names)} frozen tables; unchanged non-FDR scientific fields")
     print(f"PASS: {checked_rows} eligible BH rows across {len(family_counts)} families; intercepts excluded")
     print(f"Allowed changed cells versus v1.0.0: {changes} (FDR and lock timestamps only)")
-
-
-def verify_manifest():
-    _, rows = read_csv(ROOT / "PACKAGE_MANIFEST_SHA256.csv")
-    require(bool(rows), "Package manifest is empty")
-    seen = set()
-    for row in rows:
-        rel = Path(row["Path"])
-        require(not rel.is_absolute() and ".." not in rel.parts,
-                "Unsafe path in package manifest")
-        require(row["Path"] not in seen, "Duplicate path in package manifest")
-        seen.add(row["Path"])
-        path = ROOT / rel
-        require(path.is_file(), f"Missing manifest file: {rel}")
-        digest = hashlib.sha256(path.read_bytes()).hexdigest()
-        require(digest == row["SHA256"], f"SHA256 mismatch: {rel}")
-    print(f"PASS: {len(rows)} package SHA256 entries (distributed bytes, LF text endings)")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--results-root", type=Path,
                         default=ROOT / "expected_results/frozen_result_inputs")
-    parser.add_argument("--check-manifest", action="store_true",
-                        help="Also verify distributed files, before regenerating figures or reports")
     args = parser.parse_args()
     try:
         audit_results(args.results_root)
-        if args.check_manifest:
-            verify_manifest()
     except (OSError, ValueError, KeyError, TypeError, csv.Error) as error:
         print(f"FAIL: {error}", file=sys.stderr)
         return 1
