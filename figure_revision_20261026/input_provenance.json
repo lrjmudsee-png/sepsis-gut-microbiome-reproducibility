@@ -1,0 +1,77 @@
+[
+  {
+    "path": "expected_results/frozen_result_inputs/01_15_Analysis_Set_Summary.csv",
+    "sha256": "41a0712ee04599b897f7433dfe3ceecc134fc0af23b61ab229853fabffe88e43",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/frozen_result_inputs/04_16_Alpha_Diversity_Tests.csv",
+    "sha256": "3d3822e98d5df8174833c7b428999a45a41e33a38b528ff33bac9c486f03ea5e",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/frozen_result_inputs/23_19_Leave_One_Genus_Out_Sensitivity.csv",
+    "sha256": "9b7b8caefa77eed893c5c816ad94d7e6c834da970a9e50ec351df10277486144",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure2A_Beta_PERMANOVA_Source.csv",
+    "sha256": "b17d8326eecbbcd2970ba5a7d89cc82653fe94ef83bc5efe7f096619f5e4079c",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure2B_ICU_Meta_Source.csv",
+    "sha256": "dd8a9405befe0beee8b673a0d091797e665e7885a901b0f01221ee5869944cf7",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure2C_Healthy_Meta_Source.csv",
+    "sha256": "9bf2647c4ae7afb03df34973970a30a7f5129f9e52f483dde3bbbb25c3a1d2ff",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure3A_SDI_AUC_Source.csv",
+    "sha256": "78e89ad19639c4889d90878c8d8e6abb8459c640e9f1ae99750fe34416e2ac63",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure3B_Candidate_Diagnosis_Source.csv",
+    "sha256": "25c1f6835df7b8ca3d08e29940b29c36f773d0fb126cf783e4107084727488fa",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure3C_External_SDI_Distribution_Source.csv",
+    "sha256": "bde0db849841cad28465c0afce9c2ec4363eb7b4b93e6408a8b6c482f63692f2",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure4A_T01_Shannon_Source.csv",
+    "sha256": "140d8ba044b373ebb66ca937555ac48d55ef817479cc931cc22546591d625931",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure4B_T03_Shannon_Source.csv",
+    "sha256": "2b8f944662bbc78345a5a21a878dc83de0fa166187d0893ed6dc6ec848fb9ecf",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure4C_T06_Shannon_Source.csv",
+    "sha256": "d247b4fd1d9f22ac6603e2dd449456239f690e0967a53325178b4208b8ca194c",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Figure4D_T01_SDI_Source.csv",
+    "sha256": "f9924bda50fb7d0b143439d4b1d00fb24af7e9596797c1e5336e132b4d7fdd5b",
+    "matches_repository_source": true
+  },
+  {
+    "path": "expected_results/scientific_outputs/21_Results_Number_Summary.csv",
+    "sha256": "403ef28f255d586e0189a4ebd0359a6a4d6a069db432d0a0ebad4a11f3f0f7b4",
+    "matches_repository_source": true
+  },
+  {
+    "path": "figure_audit_20260902/V1_Figure1_Screening_Flow_FINAL_20260901.csv",
+    "sha256": "a202bdcd91c2645a9a6010c7551c1136590b850aca53f663bd840104d98601cb",
+    "matches_repository_source": true
+  }
+]

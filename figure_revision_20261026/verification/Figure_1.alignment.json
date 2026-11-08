@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "r-patchwork",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 1,
+    "exemptions": 1
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "r-patchwork",
+    "figure": {
+      "width_pt": 518.740157480315,
+      "height_pt": 408.188976377953
+    },
+    "panels": [
+      {
+        "id": "a",
+        "bbox_pt": [
+          14.9099908546078,
+          10.4607721046077,
+          232.08266275968,
+          372.393455997529
+        ],
+        "grid_id": "final-grid",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 8,
+        "col_stop": 9
+      },
+      {
+        "id": "b",
+        "bbox_pt": [
+          246.932021609306,
+          10.4607721046077,
+          507.539227895392,
+          372.393455997529
+        ],
+        "grid_id": "final-grid",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 23,
+        "col_stop": 24
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [],
+    "exemptions": [
+      {
+        "panels": [
+          "a"
+        ],
+        "checks": [
+          "panel-width"
+        ],
+        "reason": "Screening branch and analysis workflow have different structural complexity."
+      }
+    ]
+  },
+  "findings": []
+}

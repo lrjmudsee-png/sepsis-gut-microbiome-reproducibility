@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "r-patchwork",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 3,
+    "exemptions": 0
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "r-patchwork",
+    "figure": {
+      "width_pt": 518.740157480315,
+      "height_pt": 394.015748031496
+    },
+    "panels": [
+      {
+        "id": "a",
+        "bbox_pt": [
+          81.0935738297759,
+          267.002511226701,
+          506.54296388543,
+          360.385984017454
+        ],
+        "grid_id": "final-grid",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 8,
+        "col_stop": 24
+      },
+      {
+        "id": "b",
+        "bbox_pt": [
+          81.0935738297759,
+          41.0596335034605,
+          245.847120472397,
+          210.847765850284
+        ],
+        "grid_id": "final-grid",
+        "row_start": 28,
+        "row_stop": 29,
+        "col_start": 8,
+        "col_stop": 9
+      },
+      {
+        "id": "c",
+        "bbox_pt": [
+          341.789417242809,
+          41.0596335034605,
+          506.54296388543,
+          210.847765850284
+        ],
+        "grid_id": "final-grid",
+        "row_start": 28,
+        "row_stop": 29,
+        "col_start": 23,
+        "col_stop": 24
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [
+      {
+        "id": "inferred-shared-left-1",
+        "edge": "left",
+        "panels": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "inferred-shared-right-1",
+        "edge": "right",
+        "panels": [
+          "a",
+          "c"
+        ]
+      }
+    ],
+    "exemptions": []
+  },
+  "findings": []
+}

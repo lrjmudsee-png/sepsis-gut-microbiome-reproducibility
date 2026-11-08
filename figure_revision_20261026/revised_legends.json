@@ -1,0 +1,56 @@
+{
+  "main": [
+    [
+      "Study selection and analysis workflow.",
+      "(a) Three NCBI BioProject query families returned 197 query-hit rows and 143 unique projects. Of these, 126 were excluded and 17 were eligible in the reconstructed search. Six projects were recovered by the exact queries; 11 additional eligible projects identified retrospectively were not added to the frozen analysis. An independent accession cross-check retained PRJNA691455, giving seven BioProjects in the final analytic set. All 143 projects were adjudicated, with none pending. Exclusions comprised animal or preclinical studies (58), pediatric or neonatal-only studies (42), non-16S rRNA gene or incompatible assays or questions (20), no qualifying adult human gut 16S rRNA gene sepsis question (5), and non-gut samples (1). (b) Twelve analysis sets (A01-A06 and S01-S06) contributed to ICU-control discovery, healthy-control discovery, locked external evaluation, or supportive analyses. External data were not used for feature selection, coefficient refitting, or threshold optimization."
+    ],
+    [
+      "Comparator-dependent community and genus differences.",
+      "(a) PERMANOVA R² and Benjamini-Hochberg false discovery rate (FDR) in the four discovery analysis sets. (b,c) Random-effects genus meta-analyses comparing sepsis with ICU controls (A01, A02) and healthy controls (A03, A06). Points show pooled mean centered log-ratio (CLR) contrasts; horizontal lines show 95% confidence intervals. Positive values indicate higher abundance in sepsis and negative values indicate lower abundance. The dashed line marks no difference. Vermilion and blue indicate positive and negative contrasts, respectively. In a, circles and triangles denote ICU-control and healthy-control comparisons. In b, the six genera selected for the locked sepsis dysbiosis index (SDI) are emphasized; the other genera are faded. Only two of the six selected genera meet REML FDR <0.05; selection also considered directional and sensitivity evidence."
+    ],
+    [
+      "Development and external evaluation of the six-genus SDI.",
+      "(a) AUC estimates and 95% bootstrap confidence intervals for apparent development performance and locked external evaluation. The dashed line marks AUC = 0.5. Pooled development AUC was 0.731 (95% CI 0.656-0.806). External AUCs were 0.272 (0.105-0.451) for the primary trauma comparison (A05) and 0.201 (0.046-0.373) for the supportive healthy comparison (A04). (b) Genus effects oriented by the development-stage direction. Blue circles and vermilion triangles denote development and external estimates. Bilophila, Butyricimonas, Parabacteroides, and Hoylesella reversed direction. Campylobacter and Atopobium were absent at the external project level; no external effect is plotted for them. (c,d) SDI distributions for A04 (17 healthy, 18 sepsis samples) and A05 (18 trauma, 18 sepsis samples). Open gray and filled vermilion circles represent comparator and sepsis samples, respectively. Boxes show the median and interquartile range; whiskers extend to the most extreme observations within 1.5 interquartile ranges. A04 and A05 share the sepsis samples and originate from one BioProject. Score direction was retained during evaluation."
+    ],
+    [
+      "Longitudinal microbiome trajectories.",
+      "(a,b) Shannon diversity in PRJEB33360 and PRJNA691455. (c) Shannon diversity by cholestasis status in PRJNA912621; Blue circles with a solid line (No) and vermilion triangles with a dashed line (Yes) denote absence and presence of cholestasis. The paired counts on the axis are No / Yes at each timepoint. (d) Equal-weight SDI in PRJEB33360. Points and error bars show means and standard errors; sample counts appear on the axes. Open points and dashed segments identify descriptive discharge estimates (n = 3). In PRJEB33360, the day-7 Shannon coefficient was −0.772 (95% CI −1.144 to −0.401), and the omnibus time FDR was 0.0126. The corresponding PRJNA691455 time FDR was 0.318; the exploratory time-by-cholestasis interaction FDR was 0.266. Omnibus FDR families include all non-intercept terms across modeled metrics within each analysis ID."
+    ]
+  ],
+  "supplementary": [
+    [
+      "Supplementary Figure S1. Characteristics of cross-sectional analysis sets.",
+      "(a) Sample size and (b) median sequencing depth for A01-A06. Blue circles denote development analysis sets and vermilion triangles denote locked external evaluation. A02/A03 and A04/A05 share sepsis participants; counts must not be summed as unique patients. Sequencing-depth medians are shown without changing the frozen source values."
+    ],
+    [
+      "Supplementary Figure S2. Cross-sectional alpha-diversity effects.",
+      "(a) Observed genus richness, (b) Shannon diversity and (c) inverse Simpson diversity in A01, A02, A03 and A06. Points show mean sepsis-minus-comparator differences; lines show descriptive 95% confidence intervals. Both comparator families are blue; circles denote ICU controls and triangles denote healthy controls. Formal inference used Wilcoxon rank-sum tests with Benjamini-Hochberg FDR correction. The dashed line marks no difference."
+    ],
+    [
+      "Supplementary Figure S3. Post hoc leave-one-genus-out SDI diagnosis.",
+      "(a-d) Change in equal-weight SDI AUC after omission of each genus in A01, A02, A04 and A05. Positive ΔAUC indicates improved discrimination after omission. Blue circles denote development and vermilion triangles denote external evaluation. Campylobacter and Atopobium were absent at the external project level and are labeled Absent rather than assigned zero effects. All panels use a common axis and genus order. These sensitivity analyses are post hoc diagnostics, not independent validation."
+    ]
+  ],
+  "tables": [
+    [
+      "Public datasets and analytical roles.",
+      "A02/A03 and A04/A05 share sepsis participants. S01/S02 totals include baseline records. Observation counts must not be summed as unique patients. ICU, intensive care unit."
+    ],
+    [
+      "Community-level differences in discovery analysis sets.",
+      "PERMANOVA R² is reported as a proportion. FDR, Benjamini-Hochberg false discovery rate. Full alpha-diversity, dispersion and genus meta-analysis results are provided in Supplementary Data 1."
+    ],
+    [
+      "SDI development and external evaluation.",
+      "Equal-weight SDI with the development direction retained. The fixed development threshold is −1.32849067. A05 and A04 are the primary and supportive external comparisons from one BioProject. CI, confidence interval."
+    ],
+    [
+      "Longitudinal Shannon diversity tests.",
+      "FDR families include all non-intercept omnibus terms across metrics within each analysis ID. The T01 day-7 coefficient was −0.772 (95% CI −1.144 to −0.401); this contrast is distinct from the omnibus test. Further supportive results are provided in Supplementary Data 1."
+    ],
+    [
+      "Project-specific DADA2 filtering parameters.",
+      "All projects use maxN = 0, truncQ = 2 and rm.phix = TRUE. Paired values refer to forward and reverse reads. A truncLen of zero indicates no fixed-length truncation. Complete processing arguments are available in the archived scripts."
+    ]
+  ]
+}

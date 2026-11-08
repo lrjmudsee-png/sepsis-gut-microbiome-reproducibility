@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "r-patchwork",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 1,
+    "exemptions": 0
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "r-patchwork",
+    "figure": {
+      "width_pt": 518.740157480315,
+      "height_pt": 249.448818897638
+    },
+    "panels": [
+      {
+        "id": "a",
+        "bbox_pt": [
+          80.9479245310554,
+          33.4996335034605,
+          252.803665940224,
+          194.32117298169
+        ],
+        "grid_id": "final-grid",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 8,
+        "col_stop": 9
+      },
+      {
+        "id": "b",
+        "bbox_pt": [
+          334.687222476261,
+          33.4996335034605,
+          506.54296388543,
+          194.32117298169
+        ],
+        "grid_id": "final-grid",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 23,
+        "col_stop": 24
+      }
+    ],
+    "row_groups": [
+      {
+        "id": "row-1",
+        "panels": [
+          "a",
+          "b"
+        ]
+      }
+    ],
+    "column_groups": [],
+    "boundary_groups": [],
+    "exemptions": []
+  },
+  "findings": []
+}

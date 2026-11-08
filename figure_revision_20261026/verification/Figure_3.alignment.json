@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "applicable": true,
+  "auditable": true,
+  "verdict": "PASS",
+  "backend": "r-patchwork",
+  "summary": {
+    "fail": 0,
+    "warn": 0,
+    "comparisons": 5,
+    "exemptions": 0
+  },
+  "tolerances": {
+    "alignment_pt": 1.5,
+    "gutter_pt": 1.5
+  },
+  "layout": {
+    "schema_version": 1,
+    "backend": "r-patchwork",
+    "figure": {
+      "width_pt": 518.740157480315,
+      "height_pt": 459.212598425197
+    },
+    "panels": [
+      {
+        "id": "a",
+        "bbox_pt": [
+          81.7473385935555,
+          325.779956322336,
+          506.54296388543,
+          425.385984017454
+        ],
+        "grid_id": "final-grid",
+        "row_start": 10,
+        "row_stop": 11,
+        "col_start": 8,
+        "col_stop": 24
+      },
+      {
+        "id": "b",
+        "bbox_pt": [
+          81.7473385935555,
+          37.7255232672401,
+          290.580886777136,
+          256.623138942981
+        ],
+        "grid_id": "final-grid",
+        "row_start": 28,
+        "row_stop": 47,
+        "col_start": 8,
+        "col_stop": 9
+      },
+      {
+        "id": "c",
+        "bbox_pt": [
+          324.948574160577,
+          172.250974307117,
+          506.54296388543,
+          256.623138942981
+        ],
+        "grid_id": "final-grid",
+        "row_start": 28,
+        "row_stop": 29,
+        "col_start": 23,
+        "col_stop": 24
+      },
+      {
+        "id": "d",
+        "bbox_pt": [
+          324.948574160577,
+          37.7255232672401,
+          506.54296388543,
+          122.097687903104
+        ],
+        "grid_id": "final-grid",
+        "row_start": 46,
+        "row_stop": 47,
+        "col_start": 23,
+        "col_stop": 24
+      }
+    ],
+    "row_groups": [],
+    "column_groups": [
+      {
+        "id": "column-1",
+        "panels": [
+          "c",
+          "d"
+        ]
+      }
+    ],
+    "boundary_groups": [
+      {
+        "id": "inferred-shared-top-1",
+        "edge": "top",
+        "panels": [
+          "b",
+          "c"
+        ]
+      },
+      {
+        "id": "inferred-shared-bottom-1",
+        "edge": "bottom",
+        "panels": [
+          "b",
+          "d"
+        ]
+      },
+      {
+        "id": "inferred-shared-left-1",
+        "edge": "left",
+        "panels": [
+          "a",
+          "b"
+        ]
+      },
+      {
+        "id": "inferred-shared-right-1",
+        "edge": "right",
+        "panels": [
+          "a",
+          "c",
+          "d"
+        ]
+      }
+    ],
+    "exemptions": []
+  },
+  "findings": []
+}

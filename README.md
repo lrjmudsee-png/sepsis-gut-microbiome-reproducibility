@@ -67,18 +67,20 @@ After a full R run, freshly generated frozen results can be checked with:
 python validation/validate_submission_revision.py --results-root work/manuscript_reproduction/manuscript/04_final_freeze/21_results_freeze_v1/06_frozen_result_inputs
 ```
 
-## Reproduce publication figures
+## Reproduce publication figures and tables
 
-Install `ggplot2` and `patchwork`, then run:
+The current manuscript layout uses blue and vermilion with neutral gray, revised panel geometry and consistent table formatting. See [the October 2026 figure/table module](figure_revision_20261026/README.md) for source data, installation, exports and verification.
 
 ```sh
-Rscript figure_audit_20260902/09_audit_main_figure_sources_PUBLIC.R .
-Rscript figure_audit_20260902/08_make_main_figures_PUBLIC.R .
-Rscript figure_audit_20260902/10_normalize_publication_labels.R .
-Rscript figure_audit_20260902/11_make_supplementary_figures_PUBLIC.R .
+Rscript figure_revision_20261026/install_packages.R
+python -m pip install -r figure_revision_20261026/requirements.txt
+Rscript figure_revision_20261026/build_figures.R
+python figure_revision_20261026/build_tables.py
+python figure_revision_20261026/audit_figures.py
+python figure_revision_20261026/verify_reproduction.py
 ```
 
-These scripts use reviewed sources under `expected_results/` and do not refit statistical models.
+The update preserves the reviewed v1.1.0 numerical results. The older `figure_audit_20260902/` scripts remain available to reproduce the archived layout. The October presentation update is in Git history and is not included in the existing v1.1.0 Zenodo archive.
 
 ## Data availability
 
@@ -105,7 +107,8 @@ Raw reads remain in their public repositories and are not redistributed here. Co
 | `submission_outputs/` | Current figure-source data and claim records |
 | `figures_reproduced_public/` | Main figures |
 | `supplementary_figures_reproduced_public/` | Supplementary figures and source audits |
-| `publication_ready_tables/` | Publication-facing tables |
+| `publication_ready_tables/` | Publication-facing numerical tables |
+| `figure_revision_20261026/` | Current manuscript figure/table layout, source snapshots and QA |
 | `validation/` | Independent correction validation and historical baseline expectations |
 | `submission_revision_audit/` | Correction provenance and recorded verification evidence |
 | `preprocessing/` | Optional upstream reconstruction scripts |

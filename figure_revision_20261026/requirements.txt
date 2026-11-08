@@ -1,0 +1,6 @@
+PyMuPDF>=1.26,<2
+python-docx
+openpyxl
+pypdf
+reportlab
+Pillow

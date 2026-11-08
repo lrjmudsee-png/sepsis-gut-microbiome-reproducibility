@@ -1,0 +1,72 @@
+[
+  {
+    "figure": "Figure_1",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_1",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_2",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_2",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_3",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_3",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_4",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Figure_4",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  },
+  {
+    "figure": "Supplementary_Figure_S1",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Supplementary_Figure_S1",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  },
+  {
+    "figure": "Supplementary_Figure_S2",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Supplementary_Figure_S2",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  },
+  {
+    "figure": "Supplementary_Figure_S3",
+    "check": "audit_pdf_text.py",
+    "code": 0
+  },
+  {
+    "figure": "Supplementary_Figure_S3",
+    "check": "audit_figure_collisions.py",
+    "code": 0
+  }
+]

@@ -1,0 +1,249 @@
+{
+  "figures": {
+    "Figure_1": {
+      "pdf_text_sha256": "96bb5d8c6e588a6db3e63450c8378dc3968ea59ec3dca62e12d30f01313b8a19",
+      "png_sha256": "4dea7b74a86cfea5db474510312f049a095bb81c664af847fddef7314ac71630"
+    },
+    "Figure_2": {
+      "pdf_text_sha256": "d0db930b57e8347db91abe29e6b398df97a85861b4ea577c26a16d8c5bbc316f",
+      "png_sha256": "0152a93c586f2d08b1ecc2646b0a25da3285a6e8e467bf018affffb6e40c2e9f"
+    },
+    "Figure_3": {
+      "pdf_text_sha256": "3135e0029db89127d64d2820e76d487aa97a747ea3bac96f6e5989344f8e4191",
+      "png_sha256": "208c8347d470d280d2a7c719622ce2886a1fa1705b6117153e5d55b2da7589f2"
+    },
+    "Figure_4": {
+      "pdf_text_sha256": "5aae504ddc7fc90f1c78ff0b5b88b8c688bbb2faa11073a805b0e1d8ca2bc3fa",
+      "png_sha256": "5b7c6dad19983be349a8ef0013ac0d5c315a504c98524ba3a035f913fa22b4f2"
+    },
+    "Supplementary_Figure_S1": {
+      "pdf_text_sha256": "a10147cf2e2bb3a16a333f18890de5d20db4d9eebe879e5bc5d515c89cf03460",
+      "png_sha256": "0cc51a4fec3da06fcf8fe16b7483672c5916a9a4d86a3052c5577fce229c5758"
+    },
+    "Supplementary_Figure_S2": {
+      "pdf_text_sha256": "3b4e4da04aa1f7b8665a4ac3301894080a8010cc2f0d50c7d6ae7f29674858f8",
+      "png_sha256": "7350f88f3d661380eba1cb01dbc04228df8a525a9dcea430091bf5fc0ab12a2b"
+    },
+    "Supplementary_Figure_S3": {
+      "pdf_text_sha256": "bfc75fb8264c2d7be91c38763fc2d7bce60903f86f2ffb4b6fbca54c137fda2c",
+      "png_sha256": "11511e8f14dd8b18759d28a95011c768995a387e89a68d5e86ab81ecaf73b26a"
+    }
+  },
+  "main_table_cells": [
+    [
+      [
+        "Set",
+        "BioProject",
+        "Comparison or role",
+        "Observations (n)"
+      ],
+      [
+        "A01",
+        "PRJEB33360",
+        "Sepsis 67 vs ICU 79",
+        "146"
+      ],
+      [
+        "A02",
+        "PRJNA691455",
+        "Sepsis 10 vs ICU 10",
+        "20"
+      ],
+      [
+        "A03",
+        "PRJNA691455",
+        "Sepsis 10 vs healthy 10",
+        "20"
+      ],
+      [
+        "A06",
+        "PRJNA978257",
+        "Sepsis 6 vs healthy 7",
+        "13"
+      ],
+      [
+        "A05",
+        "PRJNA1010969",
+        "Sepsis 18 vs trauma 18; primary external",
+        "36"
+      ],
+      [
+        "A04",
+        "PRJNA1010969",
+        "Sepsis 18 vs healthy 17; supportive external",
+        "35"
+      ],
+      [
+        "S01/S02",
+        "PRJEB33360",
+        "Mixed models, 43 patients each",
+        "130 / 127"
+      ],
+      [
+        "S03",
+        "PRJNA691455",
+        "Longitudinal, 10 patients",
+        "29"
+      ],
+      [
+        "S04",
+        "PRJNA430161",
+        "Intervention support, 9 patients",
+        "26"
+      ],
+      [
+        "S05",
+        "PRJNA797231",
+        "Myocardial dysfunction support",
+        "34"
+      ],
+      [
+        "S06",
+        "PRJNA912621",
+        "Cholestasis, 20 patients",
+        "58"
+      ]
+    ],
+    [
+      [
+        "Comparison",
+        "PERMANOVA R²",
+        "BH FDR"
+      ],
+      [
+        "A01",
+        "0.0147",
+        "0.044"
+      ],
+      [
+        "A02",
+        "0.0537",
+        "0.401"
+      ],
+      [
+        "A03",
+        "0.1449",
+        "0.007"
+      ],
+      [
+        "A06",
+        "0.1311",
+        "0.044"
+      ]
+    ],
+    [
+      [
+        "Evaluation",
+        "AUC",
+        "95% bootstrap CI"
+      ],
+      [
+        "Pooled development, apparent",
+        "0.731",
+        "0.656–0.806"
+      ],
+      [
+        "A01 development",
+        "0.733",
+        "0.645–0.812"
+      ],
+      [
+        "A02 development",
+        "0.690",
+        "0.420–0.900"
+      ],
+      [
+        "A05 primary external",
+        "0.272",
+        "0.105–0.451"
+      ],
+      [
+        "A04 supportive external",
+        "0.201",
+        "0.046–0.373"
+      ]
+    ],
+    [
+      [
+        "Analysis",
+        "Omnibus term",
+        "P value",
+        "BH FDR"
+      ],
+      [
+        "T01, 130 observations / 43 patients",
+        "Time",
+        "0.00237",
+        "0.0126"
+      ],
+      [
+        "T02, 127 observations / 43 patients",
+        "Time",
+        "0.00446",
+        "0.0214"
+      ],
+      [
+        "T03, 29 observations / 10 patients",
+        "Time",
+        "0.0578",
+        "0.318"
+      ],
+      [
+        "T06, 58 observations / 20 patients",
+        "Time × cholestasis",
+        "0.00931",
+        "0.266"
+      ]
+    ],
+    [
+      [
+        "BioProject",
+        "Read mode",
+        "truncLen / trimLeft",
+        "maxEE"
+      ],
+      [
+        "PRJEB33360",
+        "Single end",
+        "450 / 0",
+        "2"
+      ],
+      [
+        "PRJNA691455",
+        "R1 only",
+        "250 / 17",
+        "2"
+      ],
+      [
+        "PRJNA978257",
+        "Paired",
+        "0,0 / 0,0",
+        "2,5"
+      ],
+      [
+        "PRJNA1010969",
+        "Paired",
+        "220,160 / 19,20",
+        "2,3"
+      ],
+      [
+        "PRJNA430161",
+        "Paired",
+        "0,0 / 0,0",
+        "2,15"
+      ],
+      [
+        "PRJNA797231",
+        "Paired",
+        "240,240 / 0,0",
+        "2,2"
+      ],
+      [
+        "PRJNA912621",
+        "Paired",
+        "0,0 / 0,0",
+        "2,5"
+      ]
+    ]
+  ]
+}

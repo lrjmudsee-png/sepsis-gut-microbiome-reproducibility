@@ -1,0 +1,10 @@
+﻿Metric,Value,Note
+Raw_query_hit_rows,197,Three fixed NCBI BioProject query families
+Unique_BioProjects,143,After accession-level deduplication
+Excluded,126,58 animal/preclinical; 42 pediatric/neonatal; 20 non-16S/incompatible; 5 no qualifying question; 1 non-gut
+Eligible_reconstructed_search,17,6 locked recovered + 11 additional eligible
+Locked_recovered_exact_query,6,Six of seven frozen V1 projects
+Additional_eligible_retrospective,11,Documented; not added post hoc
+Known_item_recovered,1,PRJNA691455
+Final_frozen_V1_analytic_set,7,Unchanged
+Pending,0,143/143 adjudicated

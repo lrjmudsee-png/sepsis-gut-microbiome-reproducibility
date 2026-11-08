@@ -1,0 +1,7 @@
+output/
+documents/
+QA/
+node_modules/
+source_documents/
+__pycache__/
+*.pyc

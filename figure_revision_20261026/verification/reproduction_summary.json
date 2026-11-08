@@ -1,0 +1,192 @@
+{
+  "all_checks_pass": true,
+  "checks": [
+    {
+      "check": "input: expected_results/frozen_result_inputs/01_15_Analysis_Set_Summary.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/frozen_result_inputs/04_16_Alpha_Diversity_Tests.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/frozen_result_inputs/23_19_Leave_One_Genus_Out_Sensitivity.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure2A_Beta_PERMANOVA_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure2B_ICU_Meta_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure2C_Healthy_Meta_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure3A_SDI_AUC_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure3B_Candidate_Diagnosis_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure3C_External_SDI_Distribution_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure4A_T01_Shannon_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure4B_T03_Shannon_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure4C_T06_Shannon_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Figure4D_T01_SDI_Source.csv",
+      "passed": true
+    },
+    {
+      "check": "input: expected_results/scientific_outputs/21_Results_Number_Summary.csv",
+      "passed": true
+    },
+    {
+      "check": "input: figure_audit_20260902/V1_Figure1_Screening_Flow_FINAL_20260901.csv",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Figure_1",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Figure_1",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Figure_1",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Figure_2",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Figure_2",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Figure_2",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Figure_3",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Figure_3",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Figure_3",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Figure_4",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Figure_4",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Figure_4",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Supplementary_Figure_S1",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Supplementary_Figure_S1",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Supplementary_Figure_S1",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Supplementary_Figure_S2",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Supplementary_Figure_S2",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Supplementary_Figure_S2",
+      "passed": true
+    },
+    {
+      "check": "PDF text: Supplementary_Figure_S3",
+      "passed": true
+    },
+    {
+      "check": "PNG bytes: Supplementary_Figure_S3",
+      "passed": true
+    },
+    {
+      "check": "panel alignment: Supplementary_Figure_S3",
+      "passed": true
+    },
+    {
+      "check": "all 14 PDF font/collision audits",
+      "passed": true
+    },
+    {
+      "check": "all 17 supplementary source assertions",
+      "passed": true
+    },
+    {
+      "check": "all five main-table cell matrices",
+      "passed": true
+    }
+  ],
+  "raster_comparison": [
+    {
+      "figure": "Figure_1",
+      "exact_png_match": true
+    },
+    {
+      "figure": "Figure_2",
+      "exact_png_match": true
+    },
+    {
+      "figure": "Figure_3",
+      "exact_png_match": true
+    },
+    {
+      "figure": "Figure_4",
+      "exact_png_match": true
+    },
+    {
+      "figure": "Supplementary_Figure_S1",
+      "exact_png_match": true
+    },
+    {
+      "figure": "Supplementary_Figure_S2",
+      "exact_png_match": true
+    },
+    {
+      "figure": "Supplementary_Figure_S3",
+      "exact_png_match": true
+    }
+  ],
+  "strict_raster": true
+}

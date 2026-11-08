@@ -1,5 +1,13 @@
 # Changelog
 
+## Presentation revision — 2026-10-27
+
+- Added portable reproduction of the October 26 manuscript Figures 1–4, Supplementary Figures S1–S3 and five main tables.
+- Standardized blue/vermilion/gray colors, redundant shapes/line types, panel spacing and table rules.
+- Added reviewed PDF references, legends, input SHA256 provenance, dependency instructions and render-time alignment/font/collision checks.
+- Verified all 15 figure input files against the current reviewed repository sources. Numerical results and statistical analysis code are unchanged.
+- Retained the archived v1.1.0 release and Zenodo DOI; this commit does not create a new release or archive.
+
 ## v1.1.0 — 2026-09-06
 
 Corrected publication release corresponding to the current manuscript.

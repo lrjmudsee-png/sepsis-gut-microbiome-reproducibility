@@ -1,0 +1,22 @@
+{
+  "main_tables_pages": 2,
+  "table_text_matches_reference": [
+    true,
+    true
+  ],
+  "table_pixels_match_reference": [
+    false,
+    false
+  ],
+  "table_cell_matrices_match_reference": true,
+  "assembled_manuscript_paragraphs_match_reference": true,
+  "supplementary_pdf_pixels_match_reference": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "workbook_inventory_matches_original": true,
+  "node_script_syntax_check_passed": true
+}

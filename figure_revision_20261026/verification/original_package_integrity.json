@@ -1,0 +1,71 @@
+{
+  "body_paragraphs_unchanged": true,
+  "body_paragraphs_checked": 167,
+  "main_table_changes": [
+    {
+      "table": 1,
+      "row": 1,
+      "column": 4,
+      "old": "Observations",
+      "new": "Observations (n)"
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 3,
+      "old": "Raw P",
+      "new": "P value"
+    }
+  ],
+  "workbook": {
+    "sheet_order_unchanged": true,
+    "populated_cells_checked": 34325,
+    "numeric_cells_checked": 20770,
+    "changed_cells": [
+      {
+        "sheet": "00_INDEX",
+        "cell": "A1",
+        "old": "Supplementary Data 1 — Full numerical results",
+        "new": "Supplementary Data 1. Numerical results"
+      },
+      {
+        "sheet": "00_INDEX",
+        "cell": "A2",
+        "old": "Machine-readable detailed results (sheets S1–S15); synchronized with the reviewed corrected v1.1.0 manuscript results.",
+        "new": "Cohort characteristics, statistical analyses and SDI evaluation (Tables S1-S15)."
+      }
+    ],
+    "formulas": 0
+  },
+  "frozen_input_hashes_match": true,
+  "manuscript_page_count": 30,
+  "tables_page_count": 2,
+  "baseline_page_count": 33,
+  "unchanged_body_render_pages": 24,
+  "body_render_comparison": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ]
+}
